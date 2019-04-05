@@ -1,0 +1,1723 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../dist/font/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../../dist/font/alfacart-font/css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+    <!-- Plugin -->
+    <link rel="stylesheet" type="text/css" href="../../slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../../slick/slick-theme.css"/>
+
+    <link rel="stylesheet" href="../../styles/main.css">
+
+    <title>New Alfacart Mobile Web</title>
+</head>
+<body>
+
+<div class="loader-wrapper">
+    <div>
+        <div class="spin-object"><i class="icon-cart-o"></i></div>
+        <p class="text-xsm">Harap Tunggu</p>
+    </div>
+</div>
+
+<header>
+    <div class="container-fluid m-container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row mt-15">
+                    <div class="col-2">
+                        <div class="first-head">
+                            <button type="button" id="sidebarCollapse" class="btn p-0">
+                                <i class="fas fa-bars fa-2x"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-7 pl-0"><img src="../../dist/img/logo-alfacart.png" class="main-logo"></div>
+                    <div class="col-3 pl-0 text-right text-primary text-larger">
+                        <div class="end-head">
+                            <a href="" class="invisible-link"><i class="icon-note"></i></a>
+                            <a href="" class="invisible-link"><i class="icon-cart ml-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="header-search-float">
+                    <div class="input-group header-search mt-15">
+                        <input type="text" class="form-control" placeholder="Temukan Barang Idaman Anda Disini..." aria-label="Recipient's username" aria-describedby="basic-addon2" data-toggle="modal" data-target="#modalSearchSuggest" readonly>
+                        <div class="input-group-append">
+                            <span class="input-group-text text-primary"><i class="icon-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav id="sidebar">
+    <div class="sidebar-header">
+        <div id="login" class="row d-none">
+            <div class="col text-center text-white">
+                <div class="img-profile" style="background-image: url('../../dist/img/logo-alfacart.png')"><i class="icon-user d-none"></i></div>
+                <p class="no-margin fw4 text-lg">Bagus Arisandi</p>
+                <span class="fw3 text-md">bagus.arisandi@gmail.com</span>
+            </div>
+        </div>
+        <div id="unlogin" class="row pt-30 pb-25">
+            <div class="col">
+                <a href="sign-in.html"><button type="button" class="btn btn-block btn-white btn-sm rounded-pill text-primary fw5">MASUK</button></a>
+            </div>
+            <div class="col">
+                <a href="register.html"><button type="button" class="btn btn-block btn-white btn-sm rounded-pill text-primary fw5">DAFTAR</button></a>
+            </div>
+        </div>
+        <div id="dismiss">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+
+    <ul class="list-unstyled components">
+        <li class="active">
+            <i class="icon-home cat-ico"></i><a href="index-in.html" class="invisible-link">Home</a>
+        </li>
+        <li>
+            <i class="cat-ico icon-list"></i><a id="categorySubmenu" class="invisible-link">Kategori <i class="fas fa-chevron-right"></i></a>
+        </li>
+        <li>
+            <i class="cat-ico icon-price-tag"></i><a href="#promoSubmenu" data-toggle="collapse" aria-expanded="false" class="invisible-link collapsed">Promo <i class="fas fa-chevron-up"></i></a>
+            <ul class="collapse list-unstyled" id="promoSubmenu">
+                <li>
+                    <a href="#" class="invisible-link">Page 1</a>
+                </li>
+                <li>
+                    <a href="#" class="invisible-link">Page 2</a>
+                </li>
+                <li>
+                    <a href="#" class="invisible-link">Page 3</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <i class="cat-ico icon-sort"></i><a href="#brandSubmenu" data-toggle="collapse" aria-expanded="false" class="invisible-link collapsed">Shop by Brand <i class="fas fa-chevron-up"></i></a>
+            <ul class="collapse list-unstyled" id="brandSubmenu">
+                <li>
+                    <a href="#" class="invisible-link">Page 1</a>
+                </li>
+                <li>
+                    <a href="#" class="invisible-link">Page 2</a>
+                </li>
+                <li>
+                    <a href="#" class="invisible-link">Page 3</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <i class="cat-ico icon-store"></i><a href="#storeOfficialSubmenu" data-toggle="collapse" aria-expanded="false" class="invisible-link collapsed">Official Store <i class="fas fa-chevron-up"></i></a>
+            <ul class="collapse list-unstyled" id="storeOfficialSubmenu">
+                <li>
+                    <a href="#" class="invisible-link">Page 1</a>
+                </li>
+                <li>
+                    <a href="#" class="invisible-link">Page 2</a>
+                </li>
+                <li>
+                    <a href="#" class="invisible-link">Page 3</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <i class="cat-ico icon-help-rectangle"></i><a href="" class="invisible-link">Pusat Informasi</a>
+        </li>
+        <li>
+            <i class="cat-ico icon-paper-check"></i><a href="" class="invisible-link">Daftar jadi Penjual</a>
+        </li>
+
+
+        <ul id="categorySubmenuNext" class="list-unstyled slide-child">
+            <li>
+                <a class="invisible-link dismiss"><i class="fas fa-chevron-left back"></i> Menu Utama</a>
+            </li>
+            <li>
+                <img src="../../dist/img/ic_makanan%20_%20buah%20segar.png"><a href="#subCat1" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Makanan, Minuman & Buah Segar <i class="fas fa-chevron-up"></i></a>
+                <ul class="collapse list-unstyled" id="subCat1">
+                    <li class="pr-10">
+                        <a href="#subCat1-1" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Makanan Segar, Beku & Kaleng <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat1-1">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Telur, Daging & Unggas Segar</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Makanan Laut Segar & Beku</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Makanan Kaleng</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Makanan Beku</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Makanan Beku Olahan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Buah & Sayuran Segar</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat1-2" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Makanan & Minuman Instan <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat1-2">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Makanan Instan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Minuman Instan</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat1-3" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Makanan Anak <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat1-3">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Biskuit Anak</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bubur Anak</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sereal Anak</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Makanan Anak Lainnya</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat1-4" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Bahan Masakan & Kue <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat1-4">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bahan Roti, Kue & Agar-agar</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bumbu Masakan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Beras</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Mie & Bihun</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kacang & Biji-bijian</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bumbu Masakan Lainnya</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Minyak</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Keju & Mentega</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kerupuk Mentah</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bawang Goreng</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat1-5" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Makanan & Minuman Siap Saji <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat1-5">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Jus Segar</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Makanan Segar Siap Saji</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Makanan Beku Siap Saji</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Mixing Drink</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat1-6" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Camilan <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat1-6">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Cokelat</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Snack</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Camilan Tradisional</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kacang & Kuaci</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Keripik</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Popcorn</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Biskuit & Crackers</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Wafer & Snackbar</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Marsmellow</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Permen</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Puding & Agar-agar</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat1-7" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Roti, Kue & Madu <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat1-7">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kue</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Roti</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Selai & Taburan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Madu</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat1-8" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Abon & Makanan Tradisional <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat1-8">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Abon</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Makanan Tradisional</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat1-9" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Minuman Ringan <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat1-9">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Air Mineral</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Teh & Kopi Siap Minum</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Jus & Sari Buah</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sari Kelapa & Cincau</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Minuman Kesehatan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Minuman Karbonasi</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Minuman Energi</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat1-10" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Susu Bubuk <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat1-10">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Susu 0-6 bulan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Susu 6-12 bulan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Susu 1-3 tahun</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Susu 3-5 tahun</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Susu Pertumbuhan (5+)</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Susu Khusus Bayi Alergi</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Susu Dewasa</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Susu Ibu Hamil & Menyusui</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat1-11" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Susu Cair & Es Krim <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat1-11">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Es Krim</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Yogurt</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Susu Cair</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Susu Cair Anak</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Susu Kental Manis</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat1-12" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Rokok & Korek <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat1-12">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Rokok & Korek Api</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Rokok & Korek Elektrik</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tembakau</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat1-13" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Makanan & Minuman Impor <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat1-13">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Minuman Impor</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Makanan Impor</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img src="../../dist/img/ic_rumah%20dan%20dapur.png"><a href="#subCat2" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Rumah & Dapur <i class="fas fa-chevron-up"></i></a>
+                <ul class="collapse list-unstyled" id="subCat2">
+                    <li class="pr-10">
+                        <a href="#subCat2-1" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Perlengkapan Luar Rumah <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat2-1">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perlengkapan Taman</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bibit & Perlengkapan Berkebun</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perlengkapan Kolam Renang</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Furnitur Luar Rumah</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tangga & Jemuran</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Selang Air</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Payung</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kantong Belanja</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat2-2" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Furnitur <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat2-2">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Furnitur Dapur & Ruang Makan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Furnitur Kamar Tidur</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Furnitur Ruang Keluarga</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Furnitur Ruang Tamu</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat2-3" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Dekorasi Rumah <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat2-3">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Cermin</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bingkai Foto</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Gorden & Tirai</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Dekorasi Dinding</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Jam</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tikar & Karpet</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Replika</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bunga Artifisial</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bantal Sofa</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Dekorasi Rumah Lainnya</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat2-4" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Perlengkapan Rumah <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat2-4">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Lampu & Lilin</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Senter & Baterai</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Masin Penyegel</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tempat Penyimpanan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perlengkapan Listrik</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pompa Angin</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tissue Dispenser</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Keran Air</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Wastafel</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perlengkapan Rumah Lainnya</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pipa Air</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Valve</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Keset</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tempat & Kantong Sampah</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat2-5" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Peralatan & Perawatan Kain <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat2-5">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Deterjen</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pelembut & Pelicin Pakaian</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pemutih Pakaian</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perlengkapan Cuci</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perlengkapan Setrika</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat2-6" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Perawatan & Pembersih <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat2-6">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pembersih Kimiawi</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pembasmi Hama & Serangga</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Peralatan dan Cairan Pembersih Dapur</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pembersih Toilet</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pembersih Lantai</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pembersih Kaca</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pembersih Logam & Mebel</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pembersih Tas & Sepatu</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pengharum Ruangan & Anti Lembab</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tisu</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat2-7" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Kamar Mandi <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat2-7">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Peralatan Mandi</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tirai Kamar Mandi</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Handuk</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Gantungan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Shower</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Kamar Mandi Lainnya</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat2-8" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Kamar Tidur <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat2-8">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Tempat Tidur</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bantal & Guling</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Seprai & Sarung Bantal</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kasur & Matras</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Selimut & Bedcover</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat2-9" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Dapur & Ruang Makan <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat2-9">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kompor Gas & Perangkat Memanggang</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Peralatan & Aksesori Dapur</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Peralatan Masak</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Penyimpanan Dapur</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Peralatan Meja & Makan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perlengkapan Perbekalan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Dispenser & Pompa Air Galon</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img src="../../dist/img/ic_kesehatan%20_%20kecantikan.png"><a href="#subCat3" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Kesehatan & Kecantikan <i class="fas fa-chevron-up"></i></a>
+                <ul class="collapse list-unstyled" id="subCat3">
+                    <li class="pr-10">
+                        <a href="#subCat3-1" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Peralatan Rias & Tata Rambut <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat3-1">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Cermin</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kuas & Aplikator</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tas Makeup & Organizer</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sisir & Rol Rambut</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Hair Dryer</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Alat Catok</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Alat Pencukur Rambut</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Peralatan Rias Kuku</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat3-2" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Vitamin & Suplemen <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat3-2">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Vitamin</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Suplemen Kesehatan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Suplemen Kecantikan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Nutrisi Olahraga</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat3-3" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Perawatan Tubuh <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat3-3">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bedak Tubuh</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Deodoran</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Lulur</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pelembab</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sabun Cuci Tangan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sabun Mandi</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perawatan Tubuh Lainnya</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Krim Perawatan Tubuh</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perawatan Kewanitaan</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat3-4" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Perawatan Pria <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat3-4">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sampo Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pembersih Wajah Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perlengkapan Cukur Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sabun Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Deodoran Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pelembab Kulit Pria</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat3-5" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Perawatan Rambut <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat3-5">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sampo</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Conditioner</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Penataan Rambut</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perawatan & Vitamin Rambut</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pewarna Rambut</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat3-6" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Perawatan Wajah <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat3-6">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Cotton Bud & Kapas Wajah</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pelembab Bibir</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Masker Wajah</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pelembab & Serum Wajah</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pembersih Wajah</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tisu Pembersih Makeup</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Krim & Masker Mata</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat3-7" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Riasan Wajah & Tubuh <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat3-7">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Riasan Mata</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Riasan Wajah</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Riasan Kuku</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Blush On</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Lipstik</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat3-8" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Parfum <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat3-8">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Eau De Cologne Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Eau De Toilette Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Eau De Parfume Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Eau De Cologne Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Eau De Toilette Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Eau De Parfume Wanita</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat3-9" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Pembalut & Popok Dewasa <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat3-9">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pantyliners</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pembalut</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Popok Dewasa</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat3-10" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Obat-obatan <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat3-10">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Antiseptik</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Krim & Balsem</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Minyak Herbal & Inhaler</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Obat & Pembersih Luka</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Obat & Vitamin Anak</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Obat Batuk, Demam & Flu</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Obat Herbal & Panas Dalam</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Obat Jamur & Gatal</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Obat Mual & Gangguan Pencernaan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Obat Sakit Kepala & Pereda Nyeri</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Plester & Koyo</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Obat Tetes Mata</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat3-11" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Alat Kesehatan & Kecantikan <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat3-11">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Alat Tes Kesehatan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Peralatan Medis</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Alat Kontrasepsi</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Lotion dan Alat Bantu Seksual</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Timbangan Badan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Alat Kesehatan & Kecantikan Lainnya</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="../../item-catalog.html" class="invisible-link">Anti Nyamuk</a>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat3-13" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Perawatan Gigi & Mulut <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat3-13">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Cairan Pembersih Mulut</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pasta Gigi</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sikat Gigi</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perawatan Gigi & Mulut Lainnya</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img src="../../dist/img/ic_Perlengkapan%20Bayi,%20Anak%20_%20Mainan.png"><a href="#subCat4" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Perlengkapan Bayi, Anak & Mainan <i class="fas fa-chevron-up"></i></a>
+                <ul class="collapse list-unstyled" id="subCat4">
+                    <li class="pr-10">
+                        <a href="#subCat4-1" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Gift & Perlengkapan Pesta <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat4-1">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perlengkapan Pesta</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat4-2" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Pakaian & Perlengkapan Bayi <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat4-2">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pakaian Bayi</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perlengkapan Makan & Menyusui</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Baby Gear & Gendongan Bayi</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Keamanan Bayi & Anak</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pispot & Popok Bayi</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat4-3" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Pakaian Anak Laki-laki <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat4-3">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bawahan Anak Laki-Laki</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Jaket Anak Laki-Laki</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Atasan Anak Laki-Laki</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kaos Dalam Anak Laki-Laki</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Celana Dalam Anak Laki-Laki</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pakaian Tidur Anak Laki-Laki</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pakaian Muslim Anak Laki-Laki</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Seragam Anak Laki-Laki</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pakaian Olahraga Anak Laki-Laki</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pakaian Renang Anak Laki-Laki</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat4-4" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Sepatu & Sandal Anak Laki-laki <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat4-4">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sandal Anak Laki-Laki</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sepatu Anak Laki-Laki</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kaos Kaki Anak Laki-Laki</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat4-5" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Aksesori Anak Laki-laki <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat4-5">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Ikat Pinggang Anak Laki-Laki</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Topi Anak Laki-Laki</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tas Anak Laki-Laki</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kacamata Anak Laki-Laki</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Jam Tangan Anak Laki-Laki</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Anak Laki-Laki Lainnya</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat4-6" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Pakaian Anak Perempuan <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat4-6">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Atasan Anak Perempuan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bawahan Anak Perempuan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Dress</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kaos Dalam Anak Perempuan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Celana Dalam Anak Perempuan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pakaian Tidur Anak Perempuan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pakaian Muslim Anak Perempuan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Seragam Anak Perempuan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pakaian Olahraga Anak Perempuan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pakaian Renang Anak Perempuan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Jaket Anak Perempuan</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat4-7" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Sepatu & Sandal Anak Perempuan <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat4-7">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sandal Anak Perempuan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sepatu Anak Perempuan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kaos Kaki Anak Perempuan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sepatu Olahraga Anak Perempuan</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat4-8" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Aksesori Anak Perempuan <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat4-8">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Ikat Pinggang Anak Perempuan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Topi Anak Perempuan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tas Anak Perempuan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kacamata Anak Perempuan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Jam Tangan Anak Perempuan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Rambut</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perhiasan Anak Perempuan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Anak Perempuan Lainnya</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat4-9" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Perlengkapan Mandi & Perawatan Anak <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat4-9">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bak Mandi & Aksesori</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bedak & Parfum Anak</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Cotton Bud & Kapas</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Krim & Sunblock Anak</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Minyak & Pelembab Anak</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pasta Gigi & Sikat Gigi Anak</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pembersih Pakaian & Peralatan Bayi</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Peralatan Grooming Anak</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sabun & Sampo Anak</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tisu Basah</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perawatan Anak Lainnya</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Handuk & Peralatan Mandi Lainnya </a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat4-10" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Kamar Bayi & Anak <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat4-10">
+                            <li><a href="../../item-catalog.html" class="invisible-link"></a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tempat Tidur Bayi & Anak</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kasur, Bantal, & Guling Anak</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Seprai & Selimut Anak</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Set Perlengkapan Tidur Bayi</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Tempat Tidur Bayi & Anak Lainnya</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Lemari Bayi & Anak</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Dekorasi Kamar Bayi & Anak</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat4-11" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Perlengkapan Ibu Hamil & Menyusui <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat4-11">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pakaian Ibu Hamil & Menyusui</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Atasan Ibu Hamil</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bawahan Ibu Hamil</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bra Menyusui & Panties</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Ibu Hamil & Menyusui</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Suplemen Ibu Hamil & Menyusui</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perawatan Kulit Ibu Hamil</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pompa ASI & Cooler Bag</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Pompa ASI</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Botol Penyimpanan ASI</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat4-12" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Mainan & Boneka <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat4-12">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Mainan Bayi & Balita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Boneka & Aksesori</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Action Figure, Mainan Koleksi, & Robot</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Mainan Blocks & Puzzle</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Mainan Edukasi</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Remote Control & Mainan Kendaraan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kerajinan Tangan & Kesenian</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Mainan Lainnya</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat4-13" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Sepeda Anak, Skuter & Ride On <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat4-13">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sepeda Anak</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Skuter</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Ride On</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img src="../../dist/img/ic_Mobile%20Phone%20_%20Smartwatch.png"><a href="#subCat5" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Mobile Phone & Smartwatch <i class="fas fa-chevron-up"></i></a>
+                <ul class="collapse list-unstyled" id="subCat5">
+                    <li class="pr-10">
+                        <a href="../../item-catalog.html" class="invisible-link">Feature Phone</a>
+                    </li>
+                    <li class="pr-10">
+                        <a href="../../item-catalog.html" class="invisible-link">Smart Phone</a>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat5-3" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Smartwatch & Aksesori <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat5-3">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Smartwatch</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Smartwatch</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat5-4" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Aksesori Handphone <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat5-4">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Casing Handphone</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Baterai</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kabel</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Chargers & Power Bank</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kartu Memori</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Anti Gores</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Car Holder</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Smartphone Holder</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tongsis</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Lensa Handphone</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Handphone Lainnya</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="../../item-catalog.html" class="invisible-link">Tablet</a>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat5-6" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Aksesori Tablet <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat5-6">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Anti Gores Tablet</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tablet Holder</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Casing Tablet</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesoris Tablet Lainnya</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img src="../../dist/img/ic_komputer.png"><a href="#subCat6" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Komputer & Kebutuhan Kantor <i class="fas fa-chevron-up"></i></a>
+                <ul class="collapse list-unstyled" id="subCat6">
+                    <li class="pr-10">
+                        <a href="#subCat6-1" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Komputer & Aksesori <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat6-1">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Komponen Komputer</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Komputer</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Gaming Komputer</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Komputer</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Media Penyimpanan</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat6-2" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Komponen & Software <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat6-2">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Software</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Komponen Jaringan</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat6-3" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Laptop & Aksesori <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat6-3">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Laptop</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Laptop</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat6-4" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Alat Tulis & Kertas <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat6-4">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Alat Tulis</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Buku Tulis & Kertas</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat6-5" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Perlengkapan Kantor & Sekolah <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat6-5">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pemotong & Pengukur </a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Lem & Perekat</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Binder & Folder</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Furnitur Kantor</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perlengkapan Kantor & Sekolah Lainnya</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat6-6" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Printer & Elektronik Kantor <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat6-6">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Printer & Tinta</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Elektronik Kantor</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img src="../../dist/img/ic_kamera.png"><a href="#subCat7" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Kamera & Elektronik Rumah Tangga <i class="fas fa-chevron-up"></i></a>
+                <ul class="collapse list-unstyled" id="subCat7">
+                    <li class="pr-10">
+                        <a href="#subCat7-1" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">TV & Aksesori <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat7-1">
+                            <li><a href="../../item-catalog.html" class="invisible-link">TV</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Smart TV</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori TV, Audio, & Video</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat7-2" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Audio & Video <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat7-2">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Headphone & Headset</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Speaker Portable</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Home Entertainment</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Audio & Video Player</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Video Game & Aksesori</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perangkat Audio Lain</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Audio & Video Lainnya</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat7-3" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Elektronik Rumah Tangga Besar <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat7-3">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Dispenser Elektrik </a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kulkas & Freezer</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Mesin Cuci</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Mesin Pompa Air</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Water Heater</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Elektronik Rumah Tangga Besar Lainnya</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat7-4" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Elektronik Rumah Tangga Kecil <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat7-4">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Mesin Pembuat Kopi, Es Krim, & Roti</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Mixer, Blender, & Juicer</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Food Processor</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kompor Elektrik</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Oven& Microwave</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Panci & Penggorengan Elektrik</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Rice Cooker, Steamer & Lainnya</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Toaster & Sandwich Maker</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pemanas Air Elektrik</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pisau Elektrik</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Mesin Penyegel </a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Elektronik Rumah Tangga Kecil Lainnya</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat7-5" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Pendingin Ruangan <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat7-5">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kipas Angin</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">AC</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pembersih Udara </a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Exhaust</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat7-6" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Perawatan Pakaian <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat7-6">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Setrika & Steamer</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Mesin Jahit</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat7-7" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Pembersih Rumah Elektrik <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat7-7">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Penghisap Debu Portable</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Penghisap Debu Elektrik Lainnya</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="../../item-catalog.html" class="invisible-link">Aksesori Elektronik Rumah Tangga</a>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat7-9" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Kamera & Lensa <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat7-9">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kamera DSLR</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kamera Instan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kamera Mirrorless</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kamera Pocket</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kamera Prosumer</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kamera Lainnya</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Lensa</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat7-10" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Kamera Video & CCTV <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat7-10">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Drone</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kamera Video</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">CCTV</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat7-11" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Tas & Aksesori Kamera <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat7-11">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Printer Foto</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tas & Case Kamera</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tripod & Camera Holder</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Teropong</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kartu Memori Kamera</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Kamera</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat7-12" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Perlengkapan Studio Foto <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat7-12">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Lighting</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Light Stand</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Reflector</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Background</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img src="../../dist/img/ic_fashion%20wanita.png"><a href="#subCat8" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Fashion Wanita <i class="fas fa-chevron-up"></i></a>
+                <ul class="collapse list-unstyled" id="subCat8">
+                    <li class="pr-10">
+                        <a href="#subCat8-1" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Pakaian Wanita <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat8-1">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Atasan Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Outer Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bawahan Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Jeans Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Dress Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Playsuit & Jumpsuit Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pakaian Dalam Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pakaian Tidur</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat8-2" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Sports Wanita <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat8-2">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pakaian Olahraga Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sepatu Olahraga Wanita</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat8-3" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Sepatu Wanita <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat8-3">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Boots Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Flats & Ballerina Wanita </a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Heels Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kaos Kaki Fashion & Stocking Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sandal Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sneakers Fashion Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Wedges Wanita</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat8-4" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Tas Wanita <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat8-4">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Clutches Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Shoulder Bag Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tas Ransel Fashion Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sling Bag Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Hand Bag</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Dompet Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tote Bag Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Satchel Bag Wanita</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat8-5" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Baju Muslim Wanita <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat8-5">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Atasan Muslim Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bawahan Muslim Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Dress Muslim Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Hijab Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Outerwear Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perlengkapan Sholat</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Setelan Muslim Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Jumpsuit Muslim Wanita</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat8-6" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Aksesori Wanita <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat8-6">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Ikat Pinggang Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perhiasan Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Scarf & Pashmina Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Wanita Lainnya</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Rambut</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Eyewear, Sunglasses & Lensa Kontak Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Topi Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sarung Tangan Wanita</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat8-7" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Jam Tangan Wanita & Aksesori <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat8-7">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Jam Tangan Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Jam Tangan Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Jam Tangan Pasangan</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat8-8" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Batik Wanita <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat8-8">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Baju Batik & Etnik Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Luaran Batik & Etnik Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tas Batik Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sepatu Batik Wanita</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kain & Shawl Batik Wanita</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img src="../../dist/img/ic_Fashion%20Pria.png"><a href="#subCat9" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Fashion Pria <i class="fas fa-chevron-up"></i></a>
+                <ul class="collapse list-unstyled" id="subCat9">
+                    <li class="pr-10">
+                        <a href="#subCat9-1" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Pakaian Pria <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat9-1">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Atasan Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Jeans Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bawahan Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pakaian Tidur & Dalaman Pria</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat9-2" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Baju Muslim Pria <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat9-2">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Baju Koko Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Celana Muslim Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sarung Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perlengkapan Salat Pria</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat9-3" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Batik & Etnik Pria <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat9-3">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Baju Batik & Etnik Print Pria </a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Baju Batik & Etnik Cap Pria</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat9-4" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Aksesori Pria <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat9-4">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Eyewear, Sunglasses & Lensa Kontak Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Neckties</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Ikat Pinggang Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Hats & Caps Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Scarf Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Suspenders</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Pria Lainnya</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perhiasan Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bowties & Cummerbunds</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Cuff Links</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Gloves Pria</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat9-5" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Tas & Dompet Pria <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat9-5">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tas Ransel Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sling Bag Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Dompet Pria</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat9-6" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Sepatu Pria <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat9-6">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sepatu Boots Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kaos Kaki Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sandal Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Slip On Pria & Espadrilles Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sepatu Formal Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Loafers Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sneakers  Fashion Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sepatu Casual Pria</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat9-7" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Sports Pria <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat9-7">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Pakaian Olahraga Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Sepatu Olahraga Pria</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat9-8" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Jam Tangan Pria & Aksesori <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat9-8">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Jam Tangan Pria</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Jam Tangan Pasangan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Jam Tangan Pria</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img src="../../dist/img/ic_Olahraga,%20Hobi%20_%20Otomotif.png"><a href="#subCat10" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Olahraga, Hobi & otomotif <i class="fas fa-chevron-up"></i></a>
+                <ul class="collapse list-unstyled" id="subCat10">
+                    <li class="pr-10">
+                        <a href="#subCat10-1" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Luggage & Travel Gear <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat10-1">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Koper</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tas Travel</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori Travel</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat10-2" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Olahraga Raket <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat10-2">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Badminton</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tenis</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Tenis Meja</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat10-3" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Olahraga Bola & Golf <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat10-3">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Basket</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Voli</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Futsal & Sepak Bola</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat10-4" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Atletik <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat10-4">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Fitness & Yoga</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Beladiri</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Lari</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat10-5" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Olahraga Air & Bersepeda <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat10-5">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Renang</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Bersepeda</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat10-6" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Aksesoris & Olahraga Lainnya <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat10-6">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Smart Balance Wheel</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Stopwatch & Pedometer</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Olahraga Lainnya</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat10-7" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Hobi & Aksesori <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat10-7">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Memancing</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Camping & Hiking</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Hewan Peliharaan</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Hobi Lainnya</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Koleksi Merchandise</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat10-8" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Buku & Hiburan <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat10-8">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Buku Lokal</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Buku Import</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Film & Musik</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat10-9" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Otomotif <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat10-9">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Mobil</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Motor & ATV</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Kendaraan Lainnya</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat10-10" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Aksesori & Suku Cadang <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat10-10">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori & Suku Cadang Mobil</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Aksesori & Suku Cadang Motor</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Oli & Pelumas</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">GPS</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Perlengkapan Otomotif</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat10-11" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Peralatan Industri <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat10-11">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Safety Equipment & Aksesori</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Genset</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Power Tools</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Work Tools</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img src="../../dist/img/ic_voucher.png"><a href="#subCat11" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Voucher & Jasa <i class="fas fa-chevron-up"></i></a>
+                <ul class="collapse list-unstyled" id="subCat11">
+                    <li class="pr-10">
+                        <a href="#subCat11-1" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Voucher & Kartu Perdana <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat11-1">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Voucher Elektrik Handphone</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Voucher Paket Data</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Voucher Lainnya</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat11-2" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Voucher Belanja <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat11-2">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Voucher Shopping Mall & Toko</a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Voucher Makanan & Minuman</a></li>
+                        </ul>
+                    </li>
+                    <li class="pr-10">
+                        <a href="#subCat11-3" data-toggle="collapse" aria-expanded="false" class="invisible-link has-sub collapsed">Hiburan & Pertunjukan <i class="fas fa-chevron-up"></i></a>
+                        <ul class="collapse list-unstyled" id="subCat11-3">
+                            <li><a href="../../item-catalog.html" class="invisible-link">Fun Park </a></li>
+                            <li><a href="../../item-catalog.html" class="invisible-link">Voucher Hiburan</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </ul>
+</nav>
+<div class="overlay"></div>
+
+<div class="container-fluid m-container content-scroll">
+    <div class="row pt-15 pb-20">
+        <div class="col-12">
+            <h6>Kamera & Elektronik Rumah Tangga</h6>
+        </div>
+        <div class="col-12 no-padding">
+            <div class="accordion" id="bigCategoryAccordion">
+                <ul class="list-group main-category-control pr-25 pl-25">
+                    <a href="../../item-catalog.html" class="text-primary pt-10 pb-10 fw5">Lihat Semua</a>
+                    <li class="list-group-item pl-0 pr-0">
+                        <a class="collapsed" data-toggle="collapse" data-target="#mainsubcat1" aria-expanded="true" aria-controls="mainsubcat1">TV & Aksesori <i class="fas fa-chevron-up text-primary"></i></a>
+                        <div id="mainsubcat1" class="collapse collapse-row" data-parent="#bigCategoryAccordion">
+                            <ul class="list-group">
+                                <a href="../../item-catalog.html" class="text-primary pt-10 pb-10 pl-10 fw5">Lihat Semua</a>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> TV</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Smart TV</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Aksesori TV, Audio, & Video</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-group-item pl-0 pr-0">
+                        <a class="collapsed" data-toggle="collapse" data-target="#mainsubcat2" aria-expanded="false" aria-controls="mainsubcat2">Audio & Video <i class="fas fa-chevron-up text-primary"></i></a>
+                        <div id="mainsubcat2" class="collapse collapse-row" data-parent="#bigCategoryAccordion">
+                            <ul class="list-group">
+                                <a href="../../item-catalog.html" class="text-primary pt-10 pb-10 pl-10 fw5">Lihat Semua</a>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Headphone & Headset</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Speaker Portable</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Home Entertainment</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Audio & Video Player</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Video Game & Aksesori</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Perangkat Audio Lain</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Aksesori Audio & Video Lainnya</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-group-item pl-0 pr-0">
+                        <a class="collapsed" data-toggle="collapse" data-target="#mainsubcat3" aria-expanded="false" aria-controls="mainsubcat3">Elektronik Rumah Tangga Besar <i class="fas fa-chevron-up text-primary"></i></a>
+                        <div id="mainsubcat3" class="collapse collapse-row" data-parent="#bigCategoryAccordion">
+                            <ul class="list-group">
+                                <a href="../../item-catalog.html" class="text-primary pt-10 pb-10 pl-10 fw5">Lihat Semua</a>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Dispenser Elektrik </a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Kulkas & Freezer</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Mesin Cuci</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Mesin Pompa Air</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Water Heater</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Elektronik Rumah Tangga Besar Lainnya</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-group-item pl-0 pr-0">
+                        <a class="collapsed" data-toggle="collapse" data-target="#mainsubcat4" aria-expanded="false" aria-controls="mainsubcat4">Elektronik Rumah Tangga Kecil <i class="fas fa-chevron-up text-primary"></i></a>
+                        <div id="mainsubcat4" class="collapse collapse-row" data-parent="#bigCategoryAccordion">
+                            <ul class="list-group">
+                                <a href="../../item-catalog.html" class="text-primary pt-10 pb-10 pl-10 fw5">Lihat Semua</a>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Mesin Pembuat Kopi, Es Krim, & Roti</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Mixer, Blender, & Juicer</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Food Processor</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Kompor Elektrik</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Oven& Microwave</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Panci & Penggorengan Elektrik</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Rice Cooker, Steamer & Lainnya</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Toaster & Sandwich Maker</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Pemanas Air Elektrik</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Pisau Elektrik</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Mesin Penyegel </a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Elektronik Rumah Tangga Kecil Lainnya</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-group-item pl-0 pr-0">
+                        <a class="collapsed" data-toggle="collapse" data-target="#mainsubcat11" aria-expanded="false" aria-controls="mainsubcat11">Pendingin Ruangan <i class="fas fa-chevron-up text-primary"></i></a>
+                        <div id="mainsubcat11" class="collapse collapse-row" data-parent="#bigCategoryAccordion">
+                            <ul class="list-group">
+                                <a href="../../item-catalog.html" class="text-primary pt-10 pb-10 pl-10 fw5">Lihat Semua</a>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Kipas Angin</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> AC</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Pembersih Udara </a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Exhaust</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-group-item pl-0 pr-0">
+                        <a class="collapsed" data-toggle="collapse" data-target="#mainsubcat5" aria-expanded="false" aria-controls="mainsubcat5">Perawatan Pakaian <i class="fas fa-chevron-up text-primary"></i></a>
+                        <div id="mainsubcat5" class="collapse collapse-row" data-parent="#bigCategoryAccordion">
+                            <ul class="list-group">
+                                <a href="../../item-catalog.html" class="text-primary pt-10 pb-10 pl-10 fw5">Lihat Semua</a>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Setrika & Steamer</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Mesin Jahit</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-group-item pl-0 pr-0">
+                        <a class="collapsed" data-toggle="collapse" data-target="#mainsubcat6" aria-expanded="false" aria-controls="mainsubcat6">Pembersih Rumah Elektrik <i class="fas fa-chevron-up text-primary"></i></a>
+                        <div id="mainsubcat6" class="collapse collapse-row" data-parent="#bigCategoryAccordion">
+                            <ul class="list-group">
+                                <a href="../../item-catalog.html" class="text-primary pt-10 pb-10 pl-10 fw5">Lihat Semua</a>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Penghisap Debu Portable</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Penghisap Debu Elektrik Lainnya</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-group-item pl-0 pr-0">
+                        <a class="collapsed" data-toggle="collapse" data-target="#mainsubcat7" aria-expanded="false" aria-controls="mainsubcat7">Kamera & Lensa <i class="fas fa-chevron-up text-primary"></i></a>
+                        <div id="mainsubcat7" class="collapse collapse-row" data-parent="#bigCategoryAccordion">
+                            <ul class="list-group">
+                                <a href="../../item-catalog.html" class="text-primary pt-10 pb-10 pl-10 fw5">Lihat Semua</a>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Kamera DSLR</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Kamera Instan</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Kamera Mirrorless</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Kamera Pocket</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Kamera Prosumer</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Kamera Lainnya</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Lensa</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-group-item pl-0 pr-0">
+                        <a class="collapsed" data-toggle="collapse" data-target="#mainsubcat8" aria-expanded="false" aria-controls="mainsubcat8">Kamera Video & CCTV <i class="fas fa-chevron-up text-primary"></i></a>
+                        <div id="mainsubcat8" class="collapse collapse-row" data-parent="#bigCategoryAccordion">
+                            <ul class="list-group">
+                                <a href="../../item-catalog.html" class="text-primary pt-10 pb-10 pl-10 fw5">Lihat Semua</a>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Drone</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Kamera Video</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> CCTV</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-group-item pl-0 pr-0">
+                        <a class="collapsed" data-toggle="collapse" data-target="#mainsubcat9" aria-expanded="false" aria-controls="mainsubcat9">Tas & Aksesori Kamera <i class="fas fa-chevron-up text-primary"></i></a>
+                        <div id="mainsubcat9" class="collapse collapse-row" data-parent="#bigCategoryAccordion">
+                            <ul class="list-group">
+                                <a href="../../item-catalog.html" class="text-primary pt-10 pb-10 pl-10 fw5">Lihat Semua</a>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Printer Foto</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Tas & Case Kamera</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Tripod & Camera Holder</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Teropong</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Kartu Memori Kamera</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Aksesori Kamera</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-group-item pl-0 pr-0">
+                        <a class="collapsed" data-toggle="collapse" data-target="#mainsubcat10" aria-expanded="false" aria-controls="mainsubcat10">Perlengkapan Studio Foto <i class="fas fa-chevron-up text-primary"></i></a>
+                        <div id="mainsubcat10" class="collapse collapse-row" data-parent="#bigCategoryAccordion">
+                            <ul class="list-group">
+                                <a href="../../item-catalog.html" class="text-primary pt-10 pb-10 pl-10 fw5">Lihat Semua</a>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Lighting</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Light Stand</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Reflector</a></li>
+                                <li class="list-group-item"><a href="../../item-catalog.html" class="invisible-link"><i class="fas fa-chevron-right text-primary"></i> Background</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="container-fluid m-container">
+        <div class="row bg-primary text-white pt-25 pb-15">
+            <div class="row no-margin pr-10 pl-10">
+                <div class="col text-center p-1 poi-list">
+                    <div class="img-thumbnail rounded-circle p-10">
+                        <img src="../../dist/img/footer.png" class="img-fluid">
+                    </div>
+                    <p class="no-margin text-sm mt-10 fw5">Jaminan Harga Terbaik</p>
+                </div>
+                <div class="col text-center p-1 poi-list">
+                    <div class="img-thumbnail rounded-circle p-10">
+                        <img src="../../dist/img/footer%20copy.png" class="img-fluid">
+                    </div>
+                    <p class="no-margin text-sm mt-10 fw5">Gratis Ongkos Kirim</p>
+                </div>
+                <div class="col text-center p-1 poi-list">
+                    <div class="img-thumbnail rounded-circle p-10">
+                        <img src="../../dist/img/footer%20copy%202.png" class="img-fluid">
+                    </div>
+                    <p class="no-margin text-sm mt-10 fw5">Bayar & Ambil Barang Di Alfamart Terdekat</p>
+                </div>
+                <div class="col text-center p-1 poi-list">
+                    <div class="img-thumbnail rounded-circle p-10">
+                        <img src="../../dist/img/footer%20copy%203.png" class="img-fluid">
+                    </div>
+                    <p class="no-margin text-sm mt-10 fw5">Terintegrasi dengan Poin Ponta Alfamart</p>
+                </div>
+            </div>
+            <div class="col-12"><hr class="bg-white"></div>
+
+            <div class="col-12">
+                <div class="row">
+                    <div class="col pr-1">
+                        <h6>Tentang Kami</h6>
+                        <ul class="list-group list-site text-sm">
+                            <li><a href="" class="invisible-link">Tentang Alfacart</a></li>
+                            <li><a href="" class="invisible-link">Corporate</a></li>
+                            <li><a href="" class="invisible-link">Syarat & Ketentuan</a></li>
+                            <li><a href="" class="invisible-link">Blogomething</a></li>
+                            <li><a href="" class="invisible-link">Karir di Alfacart.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col pr-1 pl-1">
+                        <h6>Bantuan</h6>
+                        <ul class="list-group list-site text-sm">
+                            <li><a href="" class="invisible-link">Cara Pembelian</a></li>
+                            <li><a href="" class="invisible-link">Cara Pembayaran</a></li>
+                            <li><a href="" class="invisible-link">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col pl-1">
+                        <h6>Layanan Pelanggan</h6>
+                        <ul class="list-group list-site text-sm">
+                            <li><a href="" class="invisible-link">1500860</a></li>
+                            <li><a href="" class="invisible-link">cs@alfadigital.id</a></li>
+                            <li><a href="" class="invisible-link">Hubungi Kami</a></li>
+                            <li><a href="" class="invisible-link">Alfacart Care</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-25">
+                <h6>Ikuti Informasi & Promosi terbaru Alfacart.com</h6>
+                <div class="input-group input-subs mb-5">
+                    <input type="text" class="form-control" placeholder="Alamat Email Anda" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">OK</span>
+                    </div>
+                </div>
+                <p class="text-sm">Tetap terhubung bersama kami dan nikmati promo + diskon terbaik dari Alfacart.com di e-mail Anda setiap hari.</p>
+            </div>
+            <div class="col-12 mt-20">
+                <h6 class="text-center mb-15">Download Aplikasi Alfacart :</h6>
+                <div class="row">
+                    <div class="col text-right pr-5">
+                        <div class="btn btn-download-app ios"><div></div></div>
+                    </div>
+                    <div class="col pl-5">
+                        <div class="btn btn-download-app android"><div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-25">
+            <div class="col-12">
+                <h6>Cicilan 0 %</h6>
+                <ul class="list-inline list-apg-info mb-0">
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/logo_bca.jpg')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/bni.png')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/Logo_BRI.png')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/bukopin.png')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/cimb niaga.png')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/Bank-Mandiri-Logo-Vector-Image.png')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/PermataBank_logo.svg.png')" class="apg-img"></div></li>
+                </ul>
+                <hr class="mt-20 mb-20">
+            </div>
+            <div class="col-12">
+                <h6>Metode Pembayaran</h6>
+                <ul class="list-inline list-apg-info mb-0">
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/Go Pay.png')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/logo_bca.jpg')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/logo_bca.jpg')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/logo_bca.jpg')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/bcaklikpay.png')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/logo_bca.jpg')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/mandiri-clickpay.png')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/dokuwallet.png')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/JCB_logo.svg.png')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/visa.png')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/mastercard.png')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/rekpon.png')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/e-payBRI.jpg')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/ponta-logo.png')" class="apg-img"></div></li>
+                </ul>
+                <hr class="mt-20 mb-20">
+            </div>
+            <div class="col-12">
+                <h6>Jasa Pengiriman</h6>
+                <ul class="list-inline list-apg-info mb-0">
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/alfatrex.png')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/JNE.png')" class="apg-img"></div></li>
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/rajakirim.png')" class="apg-img"></div></li>
+                </ul>
+                <hr class="mt-20 mb-20">
+            </div>
+            <div class="col-12">
+                <h6>Poin</h6>
+                <ul class="list-inline list-apg-info mb-0">
+                    <li class="list-inline-item"><div style="background-image: url('../../dist/img/ponta-logo.png')" class="apg-img"></div></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row bg-grey mt-20 pt-25 pb-20">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 text-center"><p>Temukan Kami di :</p></div>
+                    <div class="col-12 text-center">
+                        <ul class="list-inline linked-soc">
+                            <li class="list-inline-item">
+                                <a href="" class="invisible-link">
+                                    <div class="soc-container fb">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="invisible-link">
+                                    <div class="soc-container twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="invisible-link">
+                                    <div class="soc-container youtube">
+                                        <i class="fab fa-youtube"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="invisible-link">
+                                    <div class="soc-container ig">
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="invisible-link">
+                                    <div class="soc-container wa">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="invisible-link">
+                                    <div class="soc-container linkedin">
+                                        <i class="fab fa-linkedin"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <article>
+                    <div class="view-content less">
+                        <h6>Alfacart, Toko Belanja Online Grocery Terlengkap dari Alfamart</h6>
+                        <p>Alfamart adalah salah satu perusahaan ritel minimarket terkemuka yang telah hadir memberikan kemudahan dan kenyamanan berbelanja selama puluhan tahun untuk masyarakat Indonesia. Berbekal pengalaman tersebut dan kemauan untuk terus berkembang memberikan yang terbaik bagi pelanggan setianya, lahirlah Alfacart, toko online yang jual puluhan ribu pilihan produk kebutuhan sehari-hari dengan kategori yang beragam. Misalnya, makanan dan minuman, bahan masakan, perlengkapan bayi dan anak, hobi dan otomotif, perlengkapan rumah tangga, produk kecantikan dan kesehatan, gadget elektronik, pulsa online, paket data, dan masih banyak lagi. Bekerja sama dengan supermarket Alfamidi dan toko kecantikan Dan+Dan, toko Alfa Online Alfacart akan menjadi tempat belanja online grocery yang terlengkap dan terpercaya di Indonesia.</p>
+                        <h6 class="mt-20">Cara Belanja di Alfacart – Alfa Online dengan Mudah dan Menyenangkan</h6>
+                        <p>Menyenangkan rasanya ketika bisa memenuhi kebutuhan sehari-hari hanya dengan menggerakkan jari di layar smartphone atau laptop dari rumah. Tidak perlu lagi menghabiskan waktu lama dan menghadapi kemacetan di jalan untuk membeli produk belanja bulanan karena Alfacart hadir untuk membuat belanja online jadi dekat. Sembari bersantai dan menikmati momen bersama keluarga, belanja kebutuhan sehari-hari dapat dilakukan dengan beberapa klik melalui desktop, mobile web, atau pun aplikasi user friendly yang dapat dengan mudah diunduh atau didownload di Google Playstore. Semua dapat dilakukan dari hampir seluruh daerah di penjuru Indonesia karena toko Alfamart telah hadir di ribuan titik nusantara. Menjadikannya payment point, pickup point, hingga warehouse yang melayani pengiriman sehingga pesanan dapat sampai jauh lebih cepat. Didukung layanan pengiriman terpercaya dari Alfatrex, JNE, dan Rajakirim.</p>
+                        <h6 class="mt-20">Beragam Promo Alfacart Super Hemat</h6>
+                        <p>Ada begitu banyak program promo dan diskon produk menarik yang dapat dinikmati setiap hari di toko online terpercaya Alfacart. Membantu Anda untuk lebih hemat dan cermat dalam mengatur pengeluaran. Seluruh promo yang bisa dinikmati di toko, seperti JSM Alfamart, promo dwi mingguan (PDM), dan voucher Alfamart yang hemat juga dapat dinikmati di Alfacart dengan keuntungan yang sama. Selain itu, juga ada promo Unilever, promo gajian, promo bank, ramadhan, liburan, lebaran, natal, tahun baru, harga spesial, kupon belanja, dan cashback yang bisa dinikmati oleh seluruh pelanggan.</p>
+                        <h6 class="mt-20">Kemudahan Bertransaksi di Online Shop Alfacart</h6>
+                        <p>Bersama dengan semua itu, Alfacart juga menyediakan kemudahan bertransaksi melalui program cicilan 0% (Bank Bukopin, BNI, Bank BRI, CIMB Niaga, Permata Bank, dan Bank Mandiri. Selain itu, ada kemudahan pembayaran transfer yang dapat dilakukan via ATM, internet dan online banking (BCA Klikpay, e-Pay BRI, dan Mandiri Clickpay), Doku Wallet, JCB, dan Rekening Ponsel. Lengkap dengan fasilitas menarik lainnya, seperti bayar di tempat atau cash on delivery (COD), cash on pickup (CAP), pay at store (PAS), gratis ongkir atau biaya pengiriman dengan syarat tertentu, ambil di toko, hingga layanan pesan antar Alfamart yang memungkinkan pesanan diterima di hari yang sama. Informasi lengkap lainnya bisa diakses dengan mudah melalui blog Alfacart yang juga memuat artikel / tips dengan topik dan tema menarik setiap hari. Alfacart.com, Belanja Online Jadi Dekat.</p>
+                    </div>
+                </article>
+                <button type="button" class="btn btn-white btn-block text-primary fw5 rounded-pill has-shadow" id="moreBtn">Baca Selengkapnya</button>
+                <button type="button" class="btn btn-white btn-block text-primary fw5 rounded-pill has-shadow d-none" id="lessBtn">Tutup</button>
+            </div>
+        </div>
+        <div class="row pt-20 pb-20">
+            <div class="col-12">
+                <i class="far fa-copyright"></i> <span class="fw5">2016-2018 Alfacart. All Rights Reserved</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div class="native-modal modal fade toLeft full" id="modalSearchSuggest" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="native-header">
+        <div class="row">
+            <div class="col-1 pr-0 pt-5">
+                <i class="fa fa-chevron-left fa-2x" data-dismiss="modal"></i>
+            </div>
+            <div class="col-11">
+                <div class="input-group header-search">
+                    <input type="text" class="form-control" placeholder="Temukan Barang Idaman Anda Disini..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <span class="input-group-text text-primary"><i class="icon-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body pt-0">
+                <div class="row bg-grey pt-15 pb-5">
+                    <div class="col">
+                        <div class="card-title">
+                            <h6 class="modal-title mb-15">Riwayat Pencarian</h6>
+                        </div>
+                        <ul class="list-inline mb-0 search-suggest">
+                            <li class="list-inline-item">sgm</li>
+                            <li class="list-inline-item">minyak goreng</li>
+                            <li class="list-inline-item">khong guan</li>
+                            <li class="list-inline-item">tango</li>
+                            <li class="list-inline-item">frisian flag</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row bg-divider pt-15 pb-10">
+                    <div class="col">
+                        <div class="card-title">
+                            <h6 class="modal-title mb-15">Riwayat Pencarian</h6>
+                            <a href="" class="text-primary">
+                                <span>Bersihkan</span>
+                            </a>
+                        </div>
+                        <div class="media mb-10 text-sm">
+                            <div class="media-body">
+                                Pengharum Ruangan
+                            </div>
+                            <i class="fas fa-times text-muted align-self-center"></i>
+                        </div>
+                        <div class="media mb-10 text-sm">
+                            <div class="media-body">
+                                Lemari Baju
+                            </div>
+                            <i class="fas fa-times text-muted align-self-center"></i>
+                        </div>
+                        <div class="media mb-10 text-sm">
+                            <div class="media-body">
+                                Chitatos
+                            </div>
+                            <i class="fas fa-times text-muted align-self-center"></i>
+                        </div>
+                        <div class="media mb-10 text-sm">
+                            <div class="media-body">
+                                Niu Green tea
+                            </div>
+                            <i class="fas fa-times text-muted align-self-center"></i>
+                        </div>
+                        <div class="media mb-10 text-sm">
+                            <div class="media-body">
+                                Niu Green tea
+                            </div>
+                            <i class="fas fa-times text-muted align-self-center"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bg-white pt-15 pb-10">
+                    <div class="col">
+                        <div class="card-title">
+                            <h6 class="modal-title mb-15">Produk Terakhir yang Anda Lihat</h6>
+                            <a href="" class="text-primary">
+                                <span>Bersihkan</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 p-0">
+                        <div class="horizontal-scrolling">
+                            <ul class="list-inline last-item-result mb-0 pl-15">
+                                <li class="list-inline-item">
+                                    <div class="item-image" style="background-image: url('../../images/samsungA7.jpg')"></div>
+                                    <p>Kaos Kaki Anak Bayi Motif Lucu</p>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="item-image" style="background-image: url('../../images/milko.jpg')"></div>
+                                    <p>Bebelac 3 Madu 800g</p>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="item-image" style="background-image: url('../../images/milko.jpg')"></div>
+                                    <p>Milko Susu Sereal Cokelat & Kacang Ijo (200 mL/4 botol)</p>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="item-image" style="background-image: url('../../images/samsungA7.jpg')"></div>
+                                    <p>Samsung Galaxy A7 2018 (4GB/64GB) - Black</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../../dist/js/jquery.min.js"></script>
+<script src="../../dist/js/bootstrap.bundle.min.js"></script>
+<!-- Plugin -->
+<script type="text/javascript" src="../../slick/slick.min.js"></script>
+<script src="../../dist/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Custom JS -->
+<script type="text/javascript" src="../../dist/js/alfacart.js"></script>
+</body>
+</html>

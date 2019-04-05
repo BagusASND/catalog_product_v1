@@ -1,0 +1,14 @@
+.list-promo-h{
+  padding-top: 2px;
+  padding-left: 15px;
+
+  li{
+    width: 42%;
+    box-shadow: 0 1px 6px #9a9999;
+    border-radius: 7px;
+    overflow: hidden;
+    margin-right: 5px!important;
+
+    &:last-child{margin-right: 15px!important;}
+  }
+}

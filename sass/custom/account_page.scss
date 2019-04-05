@@ -1,0 +1,36 @@
+.list-account-menu{
+  li{
+    padding: 12px 5px 12px 50px;
+    position: relative;
+    display: block;
+    a{
+      display: block;
+      img{
+        position: absolute;
+        width: 30px;
+        left: 0;
+        top: 7px;
+      }
+      i{
+        position: absolute;
+        right: 0;
+        top: 15px;
+      }
+    }
+  }
+}
+.img-status-account{
+  width: 40px;
+}
+.notif-count{
+  background-color: $primary-orange;
+  position: absolute;
+  right: 22px;
+  top: -5px;
+  width: 17px;
+  text-align: center;
+  font-size: 10px;
+  color: #ffffff;
+  border-radius: 50%;
+  border: solid 1px #ffffff;
+}

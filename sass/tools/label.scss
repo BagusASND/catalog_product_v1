@@ -1,0 +1,23 @@
+.label{
+  font-weight: 300;
+  font-size: 11px;
+  padding: 3px 5px;
+  &.label-primary{
+    background-color: #F4EDED;
+    color: #F8686D;
+  }
+}
+
+.label-cart-notif{
+
+  width: 20px;
+  padding: 2px 0!important;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 50%;
+  border: solid 2px #ffffff;
+  display: inline-block;
+  position: absolute;
+  right: -6px;
+  top: -7px;
+}

@@ -1,0 +1,252 @@
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar {
+  width: 90%;
+  position: fixed;
+  top: 0;
+  left: -90%;
+  height: 100vh;
+  z-index: 999;
+  background: #ffffff;
+  color: #2b2b2b;
+  transition: all 0.3s;
+  overflow-x: hidden;
+
+  &.active {
+    left: 0;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .sidebar-header{
+    background-color: #FC2B22;
+    padding: 15px 30px;
+    position: relative;
+    #login{
+      .img-profile{
+        background-color: #F6F6F6;
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        margin: 0 auto 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        i{
+          color: #bbbbbb;
+          font-size: 55px;
+        }
+      }
+    }
+  }
+
+  ul{
+    &.components{
+      padding: 0px 10px 20px 65px;
+      position: relative;
+      li{
+        position: relative;
+        border-top: solid 1px #dddddd;
+
+        img{
+          position: absolute;
+          height: 24px;
+          top: 12px;
+          left: -40px;
+        }
+
+        .cat-ico{
+          position: absolute;
+          font-size: 22px;
+          top: 9px;
+          left: -45px;
+          color: $primary-red;
+        }
+
+        a{
+          display: block;
+          font-size: 13px;
+          font-weight: 500;
+          padding: 16px 5px;
+
+          &:focus{text-decoration: none}
+
+          i{
+            &.fas{
+              transition-duration: .5s;
+              position: absolute;
+              right: 5px;
+              top: 19px;
+              color: $primary-red;
+            }
+          }
+        }
+
+        &:first-child{border-top: none}
+
+        ul{
+          li{
+            a{
+              padding-left: 10px!important;
+              &:focus{text-decoration: none}
+            }
+          }
+        }
+      }
+
+      #categorySubmenuNext{
+        li{
+          ul{
+            li{
+              ul{
+                li{
+                  a{padding-left: 20px!important;}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    p{
+      color: #2b2b2b;
+      padding: 10px;
+    }
+
+    li{
+      a{
+        &.collapsed{
+          i{
+            &.fas{
+              transform: rotate(90deg);
+              transition-duration: .5s;
+            }
+          }
+        }
+
+        &:hover{color: #2b2b2b;}
+      }
+    }
+  }
+}
+
+.slide-child{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: -100%;
+  background-color: #ffffff;
+  transition: all 0.3s;
+  padding: 0px 10px 20px 65px;
+
+  &.active{right: 0}
+
+  li{
+    a{
+      padding-left: 0px!important;
+      font-weight: 400!important;
+
+      &[aria-expanded=true]{font-weight: 500!important;}
+
+      i{
+        &.back{left: -35px}
+      }
+    }
+
+    ul{
+      li{
+        border-bottom: none!important;
+        border-top: solid 1px #dddddd;
+      }
+    }
+  }
+}
+
+
+#dismiss{
+  line-height: 35px;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #ffffff;
+  padding: 2px 12px;
+
+  &:hover{color: #2b2b2b;}
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 998;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+
+  &.active {
+    display: block;
+    opacity: 1;
+  }
+}
+
+
+
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+  color: #2b2b2b;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+a.download {
+  background: #2b2b2b;
+}
+
+a.article,
+a.article:hover {
+  color: #2b2b2b !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+

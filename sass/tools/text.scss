@@ -1,0 +1,41 @@
+/*URL and Text*/
+a{
+  color: #005CA8;
+  &.invisible-link{color: inherit;}
+}
+.text-primary{color: $primary-red!important;}
+.text-secondary{color: $primary-orange!important;}
+
+/*Font Size*/
+.text-larger{font-size: 22px}
+.text-xlg{font-size: 20px}
+.text-lg{font-size: 16px}
+.text-md{font-size: 13px}
+.text-sm{font-size: 11px}
+.text-xsm{font-size: 10px}
+.text-xs{font-size: 8px}
+
+/*Font Weight*/
+.fw1{font-weight: 100}
+.fw3{font-weight: 300}
+.fw4{font-weight: 400}
+.fw5{font-weight: 500}
+.fw6{font-weight: 600}
+.fw8{font-weight: 800}
+
+
+.text-divider{
+  position: relative;
+  p{
+    position: absolute;
+    width: 100%;
+    top: -10px;
+    span{
+      background-color: #ffffff;
+      color: #b3b3b3;
+      font-weight: 300;
+      font-size: 12px;
+      padding: 0 7px;
+    }
+  }
+}

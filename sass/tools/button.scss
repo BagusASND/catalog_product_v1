@@ -1,0 +1,60 @@
+/*Button*/
+.btn-primary{
+  background-color: $primary-red;
+  border: $primary-red;
+  &:focus{box-shadow: none;}
+}
+.btn-white{background-color: #ffffff}
+.btn-outline-muted{
+  border: solid 1px #DDDDDD;
+  background-color: #F6F6F6;
+}
+
+.btn-download-app{
+  background-color: #000000;
+  padding: 5px 10px;
+  border-radius: 6px;
+
+  div{
+    width: 109px;
+    height: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &.ios{
+    div{background-image: url("#{$img-component-path}/appstore.png");}
+  }
+  &.android{
+    div{background-image: url("#{$img-component-path}/playstore.png");}
+  }
+}
+
+.btn, .label{
+  &.has-shadow{box-shadow: 0 0 5px #dedede;}
+}
+
+.btn-icon{
+  background-color: #F6F6F6;
+  border: solid 1px #e4e4e4;
+  img{
+    height: 20px;
+    margin-right: 5px;
+    margin-top: -2px;
+  }
+}
+
+.btn-group-filter{
+  box-shadow: 0 0 6px #c3c3c3;
+  border-radius: 20px;
+  width: 80%;
+  overflow: hidden;
+
+  button{
+    color: #9B9B9B;
+    font-size: 12px;
+    border-left: solid 1px #dddddd;
+    &:first-child{border: none}
+  }
+}

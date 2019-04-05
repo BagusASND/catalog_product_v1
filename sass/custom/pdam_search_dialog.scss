@@ -1,0 +1,34 @@
+.pdam-search{
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 1px 5px #c5c5c5;
+  input{
+    border: none;
+    padding-left: 0;
+    &:focus{box-shadow: none}
+    &::placeholder{
+      color: #bfbfbf;
+      font-weight: 300;
+    }
+  }
+  .input-group-prepend{
+    .input-group-text{
+      border: none;
+      background: transparent;
+    }
+  }
+}
+.list-pdam{
+  padding: 15px 0;
+  li{
+    padding: 10px 25px 10px 60px;
+    .media{
+      img{
+        width: 24px;
+        margin-right: 15px;
+        position: absolute;
+        left: 15px;
+      }
+    }
+  }
+}

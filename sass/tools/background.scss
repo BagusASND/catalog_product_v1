@@ -1,0 +1,10 @@
+.bg-grey{background-color: #F6F6F6!important;}
+.bg-primary{background-color: $primary-red!important;}
+.bg-primary-grad{background: linear-gradient(#B42025,$primary-red)}
+.bg-fs-accent{
+  background-image: url("#{$img-component-path}/Combined Shape.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-divider{border-bottom: solid 15px #F6F6F6;}

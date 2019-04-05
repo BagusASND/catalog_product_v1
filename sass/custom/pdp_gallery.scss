@@ -1,0 +1,30 @@
+.img-slider-pdp{
+  .slick-dots{
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    li{
+      margin: 0 6px;
+      button{
+        &:before{
+          font-size: 12px;
+          color: #dddddd;
+        }
+      }
+      &.slick-active{
+        button{
+          &:before{
+            color: #C81D25;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

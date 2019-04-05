@@ -1,0 +1,97 @@
+/* Modal Style - for native style */
+.native-modal{
+  .native-header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: #ffffff;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0 0 7px #d4d4d4;
+  }
+
+  .modal-dialog{
+    margin: 0;
+    min-height: 100%;
+    background-color: #ffffff;
+
+    .modal-content{
+      border: none;
+      border-radius: 0;
+    }
+  }
+
+  &.full{
+    .modal-dialog{
+      .modal-content{
+        padding-top: 68px;
+        &.simple-content{padding-top: 49px}
+      }
+    }
+  }
+
+  &.fade{
+    &.toLeft{
+      .modal-dialog, .native-header{
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+      }
+    }
+    &.toRight{
+      .modal-dialog, .native-header{
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+      }
+    }
+    &.toTop{
+      .modal-dialog, .native-header{
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+      }
+    }
+    &.toBottom{
+      .modal-dialog, .native-header{
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+      }
+    }
+
+    &.show{
+      .native-header {
+        -webkit-transform: none;
+        transform: none;
+      }
+
+      &.toLeft, .toRight, .toTop, .toBottom{
+        .modal-dialog, .native-header{
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+    }
+
+    .native-header{
+      transition: -webkit-transform .3s ease-out;
+      transition: transform .3s ease-out;
+      transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+    }
+  }
+
+  &.show{
+    .modal-dialog{
+      -webkit-transform: translate3d(0, 0, 0)!important;
+      transform: translate3d(0, 0, 0)!important;
+    }
+  }
+
+  &.bottom-auto{
+    .modal-dialog{
+      background: none;
+      .modal-content{
+        position: fixed;
+        bottom: 0;
+        border-radius: 18px 18px 0 0;
+      }
+    }
+  }
+}

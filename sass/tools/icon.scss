@@ -1,0 +1,15 @@
+/*Icon Style*/
+.linked-soc{
+  li{
+    .soc-container{
+      &.fb{background-color: #2A5297;}
+      &.twitter{background-color: #1EA1F2;}
+      &.youtube{background-color: #D4111D;}
+      &.ig{background: linear-gradient(45deg,#ffa600,#9601ce);}
+      &.wa{background-color: #00A501;}
+      &.linkedin{background-color: #318EF1;}
+    }
+  }
+}
+
+.sk-img{height: 100px;}

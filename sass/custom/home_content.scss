@@ -1,0 +1,128 @@
+.list-cat-h{
+  li{
+    width: 20%;
+    vertical-align: top;
+    p{
+      font-size: 11px;
+      text-align: center;
+      white-space: normal;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.list-cat-item-h{
+  padding-top: 2px;
+  padding-left: 15px;
+  li{
+    width: 80%;
+    box-shadow: 0 1px 6px #9a9999;
+    border-radius: 7px;
+    overflow: hidden;
+    margin-right: 5px!important;
+    &:last-child{margin-right: 15px!important;}
+  }
+}
+
+.list-brand-h{
+  li{
+    width: 20%;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 9px;
+    box-shadow: 0 1px 3px #dcdcdc;
+    div{
+      width: 100%;
+      height: 59.8px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.list-store-h{
+  li{
+    width: 30%;
+    border-radius: 9px;
+    margin-right: 0px!important;
+    overflow: hidden;
+
+    .item-store-cover{
+      width: 100%;
+      height: 110.69px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 34px;
+      position: relative;
+
+      &:before{
+        content: '';
+        width: 101%;
+        height: 101%;
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        background: linear-gradient(rgba(246, 246, 246, 0.4699999988079071),#DDDDDD);
+      }
+
+      .box-logo{
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        padding: 5px;
+        border-radius: 9px;
+        box-shadow: 0 1px 1px #a5a5a5;
+        z-index: 1;
+        position: relative;
+
+        .store-logo{
+          width: 100%;
+          height: 100%;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+
+      p{
+        text-align: center;
+        margin: 5px 0 0 0;
+        font-weight: 500;
+        height: 21px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        padding: 0 5px;
+        white-space: normal;
+      }
+    }
+  }
+}
+
+.list-partner-h{
+  padding: 10px 5px;
+  img{
+    height: 30px;
+  }
+  a{
+    p, h6{
+      white-space: normal;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    p{
+      line-height: 18px;
+      height: 36px;
+    }
+    h6{height: 38px;}
+  }
+}

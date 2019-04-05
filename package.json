@@ -1,0 +1,23 @@
+{
+  "name": "preprocessor-project-alfadigital",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "repository": "",
+  "keywords": [
+    "sass",
+    "scss",
+    "node-sass",
+    "example"
+  ],
+  "author": "Alfadigital FO-Dev",
+  "license": "MIT",
+  "dependencies": {
+    "connect": "^3.3.4",
+    "node-sass-middleware": "^0.9.8",
+    "serve-static": "^1.8.1"
+  },
+  "engines": {
+    "node": ">= 0.10.21"
+  }
+}
