@@ -1,6 +1,8 @@
 .bg-grey{background-color: #F6F6F6!important;}
-.bg-primary{background-color: $primary-red!important;}
+.bg-primary{background-color: $color-primary!important;}
+.bg-secondary{background-color: $color-secondary!important;}
 .bg-primary-grad{background: linear-gradient(#B42025,$primary-red)}
+.bg-primary-black{background-color: $primary-black!important;}
 .bg-fs-accent{
   background-image: url("#{$img-component-path}/Combined Shape.png");
   background-repeat: no-repeat;
@@ -8,3 +10,4 @@
   background-position: center;
 }
 .bg-divider{border-bottom: solid 15px #F6F6F6;}
+.bg-overlay-white{background: rgba(255,255,255,.9);}

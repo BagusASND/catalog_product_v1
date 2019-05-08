@@ -1,0 +1,116 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  background-color: #f7f7f9 ;
+  color: $primary-black;
+}
+.content-scroll{
+  margin-top: 180px;
+  position: relative;
+}
+
+.loader-wrapper{
+  position: fixed;
+  background: rgba(0,0,0,.8);
+  z-index: 9000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+  color: #ffffff;
+  font-size: 45px;
+
+  div{
+    display: table-cell;
+    vertical-align: middle;
+
+    .spin-object{
+      width: 100%;
+      display: table;
+      color: $primary-red;
+      animation: coin-spin 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+  }
+}
+
+.horizontal-scrolling{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
+
+  .list-inline{
+    &.half1{
+      li{width: 83%;}
+    }
+    &.half2{
+      li{width: 43%;}
+    }
+    &.half3{
+      li{width: 29%;}
+    }
+    &.half4{
+      li{width: 21%;}
+    }
+    li:last-child{margin-right: 1rem!important;}
+  }
+
+  &::-webkit-scrollbar {
+    width: 0px; /* remove scrollbar space */
+    height: 0px; /* remove scrollbar height */
+    background: transparent; /* optional: just make scrollbar invisible */
+  }
+}
+
+.heading-content{
+  height: 400px;
+  background: linear-gradient($color-primary,#FFD8D8);
+  position: relative;
+  img{
+    position: absolute;
+    width: 34%;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.list-catalog-img{
+  width: 100%;
+  height: 140px;
+  background-size: cover;
+  background-position: center;background-repeat: no-repeat;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+  &.elipsis{
+    line-height: 30px;
+  }
+  &.lines2{height: 59px!important;}
+  &.lines3{height: 89px!important;}
+}
+.elipsis{
+  white-space: normal;
+  line-height: 17px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  &.lines2{
+    -webkit-line-clamp: 2;
+    height: 34px;
+    &.title-text{
+      line-height: 28px;
+      height: 56px;
+    }
+  }
+  &.lines3{
+    -webkit-line-clamp: 3;
+    height: 54px;
+  }
+  &.lines10{
+    -webkit-line-clamp: 10;
+  }
+}

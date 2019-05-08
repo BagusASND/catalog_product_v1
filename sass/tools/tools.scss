@@ -1,43 +1,9 @@
-body{
-  font-family: 'Roboto', sans-serif;
-  font-size: 13px;
-  color: $primary-black;
-}
-.content-scroll{
-  margin-top: 115px;
-  position: relative;
-}
-.horizontal-scrolling{
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  overflow-scrolling: touch;
-  -webkit-overflow-scrolling: touch;
-
-  &::-webkit-scrollbar {
-    width: 0px; /* remove scrollbar space */
-    height: 0px; /* remove scrollbar height */
-    background: transparent; /* optional: just make scrollbar invisible */
-  }
-}
-
-
 #scrollTopBtn{
   position: fixed;
   z-index: 9;
   bottom: 15px;
   right: 15px;
   display:none;
-}
-
-
-.label{
-  &.label-info{
-    background-color: #F7AF20;
-    color: #ffffff;
-    font-size: 8px;
-    padding: 0px 5px;
-  }
 }
 
 .input-subs{
@@ -94,11 +60,7 @@ body{
 }
 
 
-@media (min-width: 1366px) {
-  .m-container{
-    max-width: 414px;
-  }
-}
+
 
 @keyframes coin-spin {
   0%, 100% {

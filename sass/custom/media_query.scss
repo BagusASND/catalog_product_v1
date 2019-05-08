@@ -1,0 +1,38 @@
+@media (max-width: 767px) {
+  .mitra-logo{
+    height: auto;
+    width: 80%;
+  }
+}
+
+@media (max-width: 991px) {
+  .panel-main-form{
+    &.not-home{
+      margin-top: 72px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+    }
+    &.long-head{
+      margin-top: 91px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+    }
+  }
+  .single-slider {
+    position: relative;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    .slick-arrow {
+      display: none!important;
+    }
+    .slide-items{
+      .caption-items{width: 80%!important;}
+    }
+  }
+
+  .photo-upload-container{
+    float: none;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}

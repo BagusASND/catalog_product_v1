@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="dist/font/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+  <!-- Plugin -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+  <link rel="stylesheet" href="styles/main.css">
+
+  <title>Pasiencare - Produk</title>
+</head>
+<body>
+
+
+<header class="read-scroll">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-8 col-8 app-logo text-primary">
+        <a href="index.html" class="invisible-link">
+          <img src="dist/img/pasiencare_logo.png">
+        </a>
+      </div>
+      <div class="col-sm-4 col-4 d-lg-none d-md-none text-right pt-1">
+        <button type="button" id="sidebarCollapse">
+          <i class="fas fa-bars fa-2x text-white"></i>
+        </button>
+      </div>
+      <div class="col-lg-6 col-md-6 text-center d-none d-sm-none d-lg-block d-md-block align-self-center">
+        <ul class="list-inline header-menu">
+          <li class="list-inline-item active"><a href="#">PRODUK</a></li>
+          <li class="list-inline-item"><a href="xedeka.html">XEDEKA PASIEN</a></li>
+          <li class="list-inline-item"><a href="article.html">ARTIKEL</a></li>
+          <li class="list-inline-item"><a href="contact.html">KONTAK</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3 text-lg-right text-md-right d-none d-sm-none d-lg-block d-md-block align-self-center">
+        <a href=""><button type="button" class="btn text-primary">MASUK</button></a>
+        <a href="register.html" target="_blank"><button type="button" class="btn btn-secondary">DAFTAR</button></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav id="sidebar">
+  <div class="sidebar-header">
+    <div id="login" class="row d-none">
+      <div class="col text-center text-white">
+        <div class="img-profile" style="background-image: url('dist/img/logo-alfacart.png')"><i class="icon-user d-none"></i></div>
+        <p class="no-margin fw4 text-lg">Bagus Arisandi</p>
+        <span class="fw3 text-md">bagus.arisandi@gmail.com</span>
+      </div>
+    </div>
+    <div id="unlogin" class="row">
+      <div class="col-12 app-logo text-xlg text-white">
+        <a href="index.html" class="invisible-link">
+          <img src="dist/img/pasiencare_logo.png">
+        </a>
+      </div>
+      <div class="col-12">
+        <div class="btn-group btn-block mt-15">
+          <button type="button" class="btn btn-outline-light"><a href="" class="invisible-link">MASUK</a></button>
+          <button type="button" class="btn btn-white text-primary"><a href="register.html" target="_blank" class="invisible-link">DAFTAR</a></button>
+        </div>
+      </div>
+    </div>
+    <div id="dismiss">
+      <i class="fas fa-times fa-2x"></i>
+    </div>
+  </div>
+
+  <ul class="list-unstyled components">
+    <li class="active">
+      <a href="#" class="invisible-link">Produk</a>
+    </li>
+    <li>
+      <a href="xedeka.html" class="invisible-link">Xedeka Pasien</a>
+    </li>
+    <li>
+      <a href="article.html" class="invisible-link">Artikel</a>
+    </li>
+    <li>
+      <a href="contact.html" class="invisible-link">Kontak</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 no-padding">
+      <div class="panel-main-form not-home">
+        <h4 class="fw4 mb-20 d-sm-none d-none d-md-block d-lg-block">Konsultasikan keluhan Anda pada Homecare kami dengan mengisi kolom dibawah ini :</h4>
+        <h5 class="fw4 mb-20 d-sm-block d-block d-md-none d-lg-none">Konsultasikan keluhan Anda pada Homecare kami dengan mengisi kolom dibawah ini :</h5>
+        <div class="row">
+          <div class="col-lg-10 col-md-10 col-sm-12 col-12">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                <p class="text-sm mb-5 mt-10">Siapa yang perlu kami bantu</p>
+                <select class="form-control no-border no-radius">
+                  <option></option>
+                </select>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                <p class="text-sm mb-5 mt-10">Jenis Layanan</p>
+                <select class="form-control no-border no-radius">
+                  <option></option>
+                </select>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                <p class="text-sm mb-5 mt-10">Provinsi</p>
+                <select class="form-control no-border no-radius">
+                  <option></option>
+                </select>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                <p class="text-sm mb-5 mt-10">Kabupaten</p>
+                <select class="form-control no-border no-radius">
+                  <option></option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-12 col-12">
+            <p class="text-sm mb-5 mt-10">&nbsp;</p>
+            <a href="search-result.html" class="invisible-link"><button type="button" class="btn btn-tertiary btn-block">CARI</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-50">
+    <div class="col-12">
+      <h3 class="text-center mt-50 mb-25">Pasiencare Amazing Product</h3>
+      <p>Leukimia is a type of cancer that affects the blood and bone marrow. There are two types of leukimia, chronic and acute, which are treated differently and have different symptoms. Acute leukimia rapidly progresses and needs immediate, aggressive treatment. Chronic leukimia can take months or years to</p>
+    </div>
+  </div>
+  <div class="row mt-50">
+    <div class="col-12">
+      <img src="images/rectangle_23x.png" class="img-fluid rounded">
+    </div>
+  </div>
+  <div class="row mt-50 pt-50">
+    <div class="col text-center">
+      <i class="fas fa-trophy fa-2x text-primary"></i>
+      <p class="fw5 mt-20">The Advantages Of Minimal Repair Technique</p>
+    </div>
+    <div class="col text-center">
+      <i class="fas fa-star fa-2x text-primary"></i>
+      <p class="fw5 mt-20">The Advantages Of Minimal Repair Technique</p>
+    </div>
+    <div class="col text-center">
+      <i class="fas fa-dollar-sign fa-2x text-primary"></i>
+      <p class="fw5 mt-20">The Advantages Of Minimal Repair Technique</p>
+    </div>
+  </div>
+  <div class="row mt-50">
+    <div class="col-12">
+      <div class="row">
+        <div class="col-xlg-6 col-lg-6 col-md-6 col-sm-12 col-12">
+          <img src="images/rectangle3x.png" class="img-fluid rounded mb-20">
+        </div>
+        <div class="col-xlg-6 col-lg-6 col-md-6 col-sm-12 col-12">
+          <h4 class="elipsis lines2">Lorem ipsum dolor sit amet consectetur</h4>
+          <p class="mt-15 elipsis lines10">Bowel related problems have become an integral part of the lives of the average Americans, morethe abundance of fast foods in their diet. Low vitality, stomach bloat, poor digestion– are all the natural corollaries of irregular bowel movements. Add to it foul body odor, bad breath and a lackluster skin…together they indicate to one common point and that is; your colon is not in the proper state and it needs immediate attention. Now the question is how do you ensure the health of your colon? It is simple, go for colon cleansing at regular intervals. There are mainly two different ways to cleanse the colon. The first is to consume high fiber supplements and second is to flush the colon with water. In the second case where the colon is provided large amount of fluids, it actually flushes itself to get rid of the fecal matters and toxins accumulated in its walls for years. The end result is: you get a clean inside and get back the vitality of health. How does the colon flush help you to get back to the previous healthy and energetic state? To know this you have to first learn the importance of colon with regard to our over all health. Colon is the organ responsible for conserving water in the body and eliminating the wastes from system. It also stimulates the growth of the beneficial organisms that help our body to absorb the essential nutrients like vitamin K or B complex. As a result of growing age, flawed dietary practice, stress and exposure to pollution robs our colon off its natural resilience. The passage of elimination no longer remains smooth and fecal matters are built up in the walls of colon leading to accumulation of toxins. These toxins are circulated over other parts of the body through blood and the lymphatic system. This results in a number of disorders like diarrhea, constipation, fatigue, poor skin, joint pains, and depression. Now a good colon cleansing system is one which is divided into three steps: first it prepares the colon by creating the right environment for starting with the next and most important step of flushing. It can be achieved by consuming oral supplements. Colon flush is the second step in which all the encrusted waste materials are flushed away from the digestive system. In this step, mainly the fluids are used to force out the internal debris accumulated for years. Also known as hydrotherapy or colonic irrigation, a colon flush ensures a thoroughly cleansed intestine. In the last stage helpful Probiotics are introduced to support the overall health of digestive system. In a nut shell, colon flush destroys the causes of toxin build up in the body. This is a process that triggers off energy regeneration naturally. Colon flush enables your body to repair itself and thus keeps the dangerous diseases at bay.</p>
+        </div>
+      </div>
+      <div class="row mt-50 pt-50">
+        <div class="col-xlg-6 col-lg-6 col-md-6 col-sm-12 col-12">
+          <h4 class="elipsis lines2">Lorem ipsum dolor sit amet consectetur</h4>
+          <p class="mt-15 elipsis lines10">Bowel related problems have become an integral part of the lives of the average Americans, morethe abundance of fast foods in their diet. Low vitality, stomach bloat, poor digestion– are all the natural corollaries of irregular bowel movements. Add to it foul body odor, bad breath and a lackluster skin…together they indicate to one common point and that is; your colon is not in the proper state and it needs immediate attention. Now the question is how do you ensure the health of your colon? It is simple, go for colon cleansing at regular intervals. There are mainly two different ways to cleanse the colon. The first is to consume high fiber supplements and second is to flush the colon with water. In the second case where the colon is provided large amount of fluids, it actually flushes itself to get rid of the fecal matters and toxins accumulated in its walls for years. The end result is: you get a clean inside and get back the vitality of health. How does the colon flush help you to get back to the previous healthy and energetic state? To know this you have to first learn the importance of colon with regard to our over all health. Colon is the organ responsible for conserving water in the body and eliminating the wastes from system. It also stimulates the growth of the beneficial organisms that help our body to absorb the essential nutrients like vitamin K or B complex. As a result of growing age, flawed dietary practice, stress and exposure to pollution robs our colon off its natural resilience. The passage of elimination no longer remains smooth and fecal matters are built up in the walls of colon leading to accumulation of toxins. These toxins are circulated over other parts of the body through blood and the lymphatic system. This results in a number of disorders like diarrhea, constipation, fatigue, poor skin, joint pains, and depression. Now a good colon cleansing system is one which is divided into three steps: first it prepares the colon by creating the right environment for starting with the next and most important step of flushing. It can be achieved by consuming oral supplements. Colon flush is the second step in which all the encrusted waste materials are flushed away from the digestive system. In this step, mainly the fluids are used to force out the internal debris accumulated for years. Also known as hydrotherapy or colonic irrigation, a colon flush ensures a thoroughly cleansed intestine. In the last stage helpful Probiotics are introduced to support the overall health of digestive system. In a nut shell, colon flush destroys the causes of toxin build up in the body. This is a process that triggers off energy regeneration naturally. Colon flush enables your body to repair itself and thus keeps the dangerous diseases at bay.</p>
+        </div>
+        <div class="col-xlg-6 col-lg-6 col-md-6 col-sm-12 col-12 order-first order-sm-first order-md-last order-lg-last order-xl-last">
+          <img src="images/rectangle-copy3x.png" class="img-fluid rounded mb-20">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-50 pt-20">
+    <div class="col-12">
+      <h3 class="text-center mt-50 mb-25">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+      <p class="text-center">Leukimia is a type of cancer that affects the blood and bone marrow. There are two types of leukimia, chronic and acute, which are treated differently and have different symptoms. Acute leukimia rapidly progresses and needs immediate, aggressive treatment. Chronic leukimia can take months or years to</p>
+    </div>
+  </div>
+  <div class="row mt-50">
+    <div class="col-12 pt-25 pl-25">
+      <div class="card bg-primary w-75 h-50 border-0 rounded-0 position-absolute left-0 top-0"></div>
+      <div class="card border-0 shadow p-25 h-75">
+        <div class="row">
+          <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12">
+            <h3 class="mb-30">Download Now</h3>
+            <p class="mb-30">Bowel related problems have become an integral part of the</p>
+            <ul class="list-inline text-center text-sm-center text-lg-left text-md-left">
+              <li class="list-inline-item">
+                <div class="btn btn-download-app android"><div></div></div>
+              </li>
+              <li class="list-inline-item">
+                <div class="btn btn-download-app ios"><div></div></div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+            <img src="images/bitmap3x.png" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+        <p class="no-margin app-logo"><img src="dist/img/pasiencare_logo.png"></p>
+        <ul class="list-inline header-menu fw5 mt-20">
+          <li class="list-inline-item"><a href="" class="invisible-link">PRODUK</a></li>
+          <li class="list-inline-item"><a href="" class="invisible-link">PENDAFTARAN</a></li>
+          <li class="list-inline-item"><a href="" class="invisible-link">ARTIKEL</a></li>
+          <li class="list-inline-item"><a href="" class="invisible-link">XEDEKA PASIEN</a></li>
+          <li class="list-inline-item"><a href="" class="invisible-link">KONTAK</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-lg-right text-md-right text-sm-center text-center">
+        <ul class="list-inline linked-soc mt-30">
+          <li class="list-inline-item">
+            <a href="" class="invisible-link">
+              <div class="soc-container fb">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="" class="invisible-link">
+              <div class="soc-container ig">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="" class="invisible-link">
+              <div class="soc-container youtube">
+                <i class="fab fa-youtube"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="dist/js/jquery.min.js"></script>
+<script src="dist/js/bootstrap.bundle.min.js"></script>
+<!-- Plugin -->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="dist/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Custom JS -->
+<script type="text/javascript" src="dist/js/pasiencare.js"></script>
+</body>
+</html>

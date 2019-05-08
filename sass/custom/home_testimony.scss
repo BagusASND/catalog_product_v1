@@ -1,0 +1,30 @@
+.slider-testimony-home{
+  position: relative;
+  padding-bottom: 50px;
+  margin: 50px 0;
+  .card{
+    margin-right: 40px;
+    padding: 20px;
+  }
+  .slick-list{
+    padding-bottom: 20px;
+    overflow: unset;
+    width: 88%;
+  }
+
+  .slick-arrow{
+    background-color: $color-primary;
+    padding: 9px 7px 5px;
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 1px 2px 5px #a5a0a0;
+    top: unset;
+    bottom: -22px;
+    &:before{font-size: 30px;}
+  }
+  .slick-prev{
+    left: unset;
+    right: 60px;}
+  .slick-next{right: 0px;}
+}

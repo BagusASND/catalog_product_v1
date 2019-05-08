@@ -2,10 +2,16 @@
 .linked-soc{
   li{
     .soc-container{
-      &.fb{background-color: #2A5297;}
-      &.twitter{background-color: #1EA1F2;}
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+      padding: 4px 0;
+      width: 38px;
+      border-radius: 50%;
+      &.fb{background-color: #1f518c;}
+      &.twitter{background-color: #34b2cb;}
       &.youtube{background-color: #D4111D;}
-      &.ig{background: linear-gradient(45deg,#ffa600,#9601ce);}
+      &.ig{background-color: #4a90e2;}
       &.wa{background-color: #00A501;}
       &.linkedin{background-color: #318EF1;}
     }

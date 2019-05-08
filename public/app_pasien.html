@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="dist/font/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+  <!-- Plugin -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="gijgo/gijgo.min.css"/>
+
+  <link rel="stylesheet" href="styles/main.css">
+
+  <title>Pasiencare - Profil Pasien</title>
+</head>
+<body>
+
+<header class="bg-white pb-0 position-sticky">
+  <div class="container">
+    <div class="row pb-15">
+      <div class="col app-logo">
+        <img src="dist/img/pasiencare_logo.png">
+      </div>
+      <div class="col text-right app-logo">
+        <div class="d-none d-sm-none d-md-block d-lg-block d-xl-block">
+          <img src="images/ryan.jpg" class="rounded-circle mr-15">
+          <span class="text-muted text-lg fw5">Ferry</span>
+        </div>
+        <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none">
+          <button type="button" id="sidebarCollapse">
+            <i class="fas fa-bars text-muted"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-primary-black d-none d-sm-none d-md-block d-lg-block d-xl-block">
+    <div class="container">
+      <div class="row pt-15 pb-15">
+        <div class="col-12">
+          <ul class="list-inline no-margin text-white">
+            <li class="list-inline-item"><a href="" class="invisible-link">DATA PASIEN</a></li>
+            <li class="list-inline-item"><a href="" class="invisible-link">REGISTRASI FASYANKES</a></li>
+            <li class="list-inline-item"><a href="" class="invisible-link">JARINGAN KESEHATAN</a></li>
+            <li class="list-inline-item"><a href="" class="invisible-link">XEDEKA PASIEN</a></li>
+            <li class="list-inline-item"><a href="" class="invisible-link">PELATIHAN ONLINE</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav id="sidebar">
+  <div class="sidebar-header">
+    <div id="login" class="row">
+      <div class="col-4">
+        <img src="images/ryan.jpg" class="img-fluid rounded-circle">
+      </div>
+      <div class="col-8 align-self-center text-white">
+        <p class="text-xlg fw5 no-margin">Ferry</p>
+        <span class="text-xsm">KELUAR</span>
+      </div>
+    </div>
+    <div id="dismiss">
+      <i class="fas fa-times fa-2x"></i>
+    </div>
+  </div>
+
+  <ul class="list-unstyled components">
+    <li class="active"><a href="" class="invisible-link">DATA PASIEN</a></li>
+    <li><a href="" class="invisible-link">REGISTRASI FASYANKES</a></li>
+    <li><a href="" class="invisible-link">JARINGAN KESEHATAN</a></li>
+    <li><a href="" class="invisible-link">XEDEKA PASIEN</a></li>
+    <li><a href="" class="invisible-link">PELATIHAN ONLINE</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="row mt-50">
+    <div class="col-12">
+      <div class="card border-0 shadow-sm p-15">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+            <h4 class="text-center mt-50 pt-50">Profil Pasien</h4>
+
+            <div class="row mt-50">
+              <div class="col-12 text-center">
+                <img src="images/ryan.jpg" class="img-profile rounded-circle mb-10">
+                <a href="app_pasien_photo.html" class="invisible-link text-primary d-block">Ganti Profil</a>
+                <p class="text-lg mt-10">Charles Fox</p>
+              </div>
+              <div class="col-12 pt-30">
+                <ul class="nav nav-tabs primary-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active pl-0" id="home-tab" data-toggle="tab" href="#personalDetail" role="tab" aria-controls="home" aria-selected="true">DATA PRIBADI</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#passwordChange" role="tab" aria-controls="profile" aria-selected="false">GANTI PASSWORD</a>
+                  </li>
+                </ul>
+                <hr>
+
+                <div class="tab-content pt-30 pb-30" id="myTabContent">
+                  <div class="tab-pane fade show active" id="personalDetail" role="tabpanel" aria-labelledby="personal-tab">
+                    <div class="row form-group mb-20">
+                      <label class="col-12 col-form-label fw5">Nama Lengkap</label>
+                      <div class="col-12">
+                        <input type="text" class="form-control" placeholder="Nama Lengkap">
+                      </div>
+                    </div>
+                    <div class="row form-group mb-20">
+                      <label class="col-12 col-form-label fw5">Tanggal Lahir</label>
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="input-group bg-white rounded form-datepicker append-has-border">
+                          <input id="datepicker"  type="text" class="form-control" placeholder="Tanggal Lahir">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row form-group mb-20">
+                      <label class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-form-label fw5">Jenis Kelamin</label>
+                      <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                        <div class="row">
+                          <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-3 pt-2">
+                            <div class="radio-control">
+                              <input type="radio" name="gender_option">
+                              <div class="radio-check"></div> Laki-laki
+                            </div>
+                          </div>
+                          <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-3 pt-2">
+                            <div class="radio-control">
+                              <input type="radio" name="gender_option">
+                              <div class="radio-check"></div> Perempuan
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row form-group mb-20">
+                      <label class="col-12 col-form-label fw5">Alamat Email</label>
+                      <div class="col-12">
+                        <input type="email" class="form-control" placeholder="Alamat Email">
+                      </div>
+                    </div>
+                    <div class="row form-group mb-20">
+                      <label class="col-12 col-form-label fw5">Nomor Telepon</label>
+                      <div class="col-12">
+                        <input type="number" class="form-control" placeholder="Nomor Telepon">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+                        <div class="row form-group">
+                          <label class="col-12 col-form-label fw5">Kelurahan/Desa</label>
+                          <div class="col-12">
+                            <input type="text" class="form-control" placeholder="Desa/Kelurahan">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+                        <div class="row form-group">
+                          <label class="col-12 col-form-label fw5">Kecamatan</label>
+                          <div class="col-12">
+                            <input type="text" class="form-control" placeholder="Kecamatan">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+                        <div class="row form-group">
+                          <label class="col-12 col-form-label fw5">Kabupaten</label>
+                          <div class="col-12">
+                            <input type="text" class="form-control" placeholder="Kabupaten/Kota">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+                        <div class="row form-group">
+                          <label class="col-12 col-form-label fw5">Provinsi</label>
+                          <div class="col-12">
+                            <input type="text" class="form-control" placeholder="Provinsi">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row form-group mb-20">
+                      <label class="col-12 col-form-label fw5">Alamat</label>
+                      <div class="col-12">
+                        <textarea class="form-control no-resize" placeholder="Alamat" rows="3"></textarea>
+                      </div>
+                    </div>
+                    <div class="row form-group mb-20">
+                      <label class="col-12 col-form-label fw5">Riwayat Penyakit</label>
+                      <div class="col-12">
+                        <input type="text" class="form-control" placeholder="Riwayat Penyakit" data-toggle="dropdown">
+                        <div class="dropdown-menu border-0 shadow p-20 text-muted fw5">
+                          <ul class="list-group list-group-flush text-sm">
+                            <li class="list-group-item border-0 p-5 text-primary">Diabetes</li>
+                            <li class="list-group-item border-0 p-5">Kanker</li>
+                            <li class="list-group-item border-0 p-5">Hipertensi</li>
+                            <li class="list-group-item border-0 p-5">Kegemukan</li>
+                            <li class="list-group-item border-0 p-5">Stroke</li>
+                            <li class="list-group-item border-0 p-5">Penyakit Jantung</li>
+                            <li class="list-group-item border-0 p-5">Penyakit Ginjal</li>
+                            <li class="list-group-item border-0 p-5">HIV/AIDS</li>
+                            <li class="list-group-item border-0 p-5">Lainnya</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="passwordChange" role="tabpanel" aria-labelledby="password-tab">
+                    <div class="row form-group mb-20">
+                      <label class="col-12 col-form-label fw5">Masukkan Password Lama</label>
+                      <div class="col-12">
+                        <input type="password" class="form-control" placeholder="">
+                      </div>
+                    </div>
+                    <div class="row form-group mb-20">
+                      <label class="col-12 col-form-label fw5">Masukkan Password Baru</label>
+                      <div class="col-12">
+                        <input type="password" class="form-control" placeholder="">
+                      </div>
+                    </div>
+                    <div class="row form-group mb-20">
+                      <label class="col-12 col-form-label fw5">Ketik Ulang Password Baru</label>
+                      <div class="col-12">
+                        <input type="password" class="form-control" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row form-group mb-50 mt-40">
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <button type="button" class="btn btn-primary btn-block mb-15">SIMPAN PERUBAHAN</button>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <button type="button" class="btn btn-outline-primary btn-block mb-15">BATAL</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="mb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+        <p class="no-margin app-logo"><img src="dist/img/pasiencare_logo.png"></p>
+        <ul class="list-inline header-menu text-muted fw5 mt-20">
+          <li class="list-inline-item"><a href="" class="invisible-link">DATA PASIEN</a></li>
+          <li class="list-inline-item"><a href="" class="invisible-link">REGISTRASI FASYANKES</a></li>
+          <li class="list-inline-item"><a href="" class="invisible-link">JARINGAN KESEHATAN</a></li>
+          <li class="list-inline-item"><a href="" class="invisible-link">XEDEKA PASIEN</a></li>
+          <li class="list-inline-item"><a href="" class="invisible-link">PELATIHAN ONLINE</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-lg-right text-md-right text-sm-center text-center">
+        <ul class="list-inline linked-soc mt-30">
+          <li class="list-inline-item">
+            <a href="" class="invisible-link">
+              <div class="soc-container fb">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="" class="invisible-link">
+              <div class="soc-container ig">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="" class="invisible-link">
+              <div class="soc-container youtube">
+                <i class="fab fa-youtube"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-primary-black">
+    <div class="container">
+      <div class="row pt-5 pb-5 text-white">
+        <div class="col-12">2019 Pasiencare. Hak cipta dilindungi oleh undang-undang.</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="dist/js/jquery.min.js"></script>
+<script src="dist/js/bootstrap.bundle.min.js"></script>
+<!-- Plugin -->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="dist/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="gijgo/gijgo.min.js"></script>
+<!-- Custom JS -->
+<script type="text/javascript" src="dist/js/pasiencare.js"></script>
+</body>
+</html>

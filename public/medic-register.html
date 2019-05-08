@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="dist/font/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+  <!-- Plugin -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="gijgo/gijgo.min.css"/>
+
+  <link rel="stylesheet" href="styles/main.css">
+
+  <title>Pasiencare - Register Tenaga Kesehatan</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+      <p class="text-center app-logo text-primary mt-50">
+        <img src="dist/img/pasiencare_logo.png">
+      </p>
+      <h4 class="text-center mt-50 pt-50">Pendaftaran Tenaga Kesehatan</h4>
+      <p class="text-center mt-10">Isi data diri Anda dengan lengkap, sesuaikan dengan identitas pribadi Anda dan pastikan semua kolom tidak boleh kosong</p>
+
+      <div class="row mt-50">
+        <div class="col-12">
+          <div class="row form-group mb-20">
+            <div class="col-12">
+              <input type="text" class="form-control shadow border-0" placeholder="Nama Lengkap sesuai KTP">
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12">
+              <input type="number" class="form-control shadow border-0" placeholder="No KTP">
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <div class="input-group shadow bg-white rounded form-datepicker">
+                <input id="datepicker"  type="text" class="form-control border-0" placeholder="Tanggal Lahir">
+              </div>
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <label class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-form-label text-muted fw5">Jenis Kelamin</label>
+            <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+              <div class="row">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-3 pt-2">
+                  <div class="radio-control">
+                    <input type="radio" name="gender_option">
+                    <div class="radio-check"></div> Laki-laki
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-3 pt-2">
+                  <div class="radio-control">
+                    <input type="radio" name="gender_option">
+                    <div class="radio-check"></div> Perempuan
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row form-group mb-0">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+              <input type="text" class="form-control shadow border-0" placeholder="Desa/Kelurahan">
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+              <input type="text" class="form-control shadow border-0" placeholder="Kecamatan">
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+              <input type="text" class="form-control shadow border-0" placeholder="Kabupaten/Kota">
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+              <input type="text" class="form-control shadow border-0" placeholder="Provinsi">
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12">
+              <textarea class="form-control no-resize shadow border-0" placeholder="Alamat" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12">
+              <input type="number" class="form-control shadow border-0" placeholder="No Telepon">
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12">
+              <input type="email" class="form-control shadow border-0" placeholder="Email">
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12">
+              <input type="text" class="form-control shadow border-0" placeholder="Pekerjaan">
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12">
+              <input type="text" class="form-control shadow border-0" placeholder="No STR">
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+              <div class="input-group shadow bg-white rounded">
+                <input type="text" class="form-control border-0" placeholder="Tanggal STR Mulai Berlaku">
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+              <div class="input-group shadow bg-white rounded">
+                <input type="text" class="form-control border-0" placeholder="Tanggal STR Berakhir">
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12">
+              <div class="custom-file primary-input-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile02">
+                <label class="custom-file-label text-center" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Klik disini untuk upload STR</label>
+              </div>
+              <p class="text-sm text-muted mt-10 ml-25">Format *.jpg, *.png, *.pdf</p>
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <label class="col-12 fw5">Sudah pernah mengikuti pelatihan bersertifikat ?</label>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 pt-2">
+                  <div class="radio-control fw5">
+                    <input type="radio" name="training_statement" onclick="trainingStatementNo();">
+                    <div class="radio-check"></div> Belum Pernah
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 pt-2">
+                  <div class="radio-control fw5">
+                    <input type="radio" name="training_statement" onclick="trainingStatementYes();" checked>
+                    <div class="radio-check"></div> Sudah Pernah
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="trainingForm">
+            <div class="row form-group mb-20">
+              <div class="col-12">
+                <input type="text" class="form-control shadow border-0" placeholder="Jenis Pelatihan">
+              </div>
+            </div>
+            <div class="row form-group mb-20">
+              <div class="col-12">
+                <input type="text" class="form-control shadow border-0" placeholder="No Sertifikat">
+              </div>
+            </div>
+            <div class="row form-group mb-20">
+              <div class="col-12">
+                <input type="text" class="form-control shadow border-0" placeholder="Penyelenggara/Penerbit">
+              </div>
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <div class="col-12">
+              <label class="checkbox-control">Dengan ini saya menyatakan  bahwa data yang saya isi adalah benar dan dapat di pertanggung jawabkan di hadapan hukum
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+
+
+          <div class="row form-group mb-20 mt-40">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <button type="button" class="btn btn-primary btn-block mb-15">DAFTAR TENAGA KESEHATAN</button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <button type="button" class="btn btn-outline-primary btn-block mb-15">BATAL</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Register Success-->
+<div class="modal fade bg-overlay-white" id="registerSuccess" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content border-0 rounded overflow-hidden">
+      <div class="modal-body bg-primary text-center pt-50 pb-50 text-white">
+        <h5>Terima Kasih<br>
+          Silakan cek email yang sudah Anda daftarkan untuk verifikasi akun</h5>
+        <div class="row">
+          <div class="col-4 offset-4">
+            <button type="button" class="btn btn-white btn-block mt-50 text-primary" data-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Register Statement-->
+<div class="modal fade bg-overlay-white" id="registerStatement" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content border-0 rounded overflow-hidden">
+      <div class="modal-body bg-primary text-center pt-50 pb-50 text-white">
+        <h5>Apakah Anda sudah pernah dirawat oleh tim kami ?</h5>
+        <div class="row mt-40">
+          <div class="col-12 text-lg-left text-xl-left text-md-left">
+            <button type="button" class="btn btn-outline-light mr-15" data-toggle="modal" data-target="#rekamMedisForm" data-dismiss="modal">SUDAH PERNAH</button>
+            <button type="button" class="btn btn-white text-primary" data-toggle="modal" data-target="#registerSuccess" data-dismiss="modal">BELUM PERNAH</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Register Statemen Lanjutan-->
+<div class="modal fade bg-overlay-white" id="rekamMedisForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content border-0 rounded overflow-hidden">
+      <div class="modal-body bg-primary pt-50 pb-50 text-white">
+        <h5 class="mb-20">Isi form berikut untuk melanjutkan</h5>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+            <div class="form-group mb-10 shadow">
+              <input type="text" class="form-control border-0" placeholder="No Rekam Medis Anda">
+            </div>
+            <div class="form-group mb-30 shadow">
+              <input type="number" class="form-control border-0" placeholder="No Handphone">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-lg-left text-xl-left text-md-left text-sm-center text-center">
+            <button type="button" class="btn btn-primary-alt pl-50 pr-50 mr-15">MASUK</button>
+            <button type="button" class="btn btn-outline-light pl-50 pr-50" data-toggle="modal" data-target="#registerSuccess" data-dismiss="modal">BATAL</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="dist/js/jquery.min.js"></script>
+<script src="dist/js/bootstrap.bundle.min.js"></script>
+<!-- Plugin -->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="dist/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="gijgo/gijgo.min.js"></script>
+<!-- Custom JS -->
+<script type="text/javascript" src="dist/js/pasiencare.js"></script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="dist/font/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+  <!-- Plugin -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+  <link rel="stylesheet" href="styles/main.css">
+
+  <title>Pasiencare - Xedeka Pasien</title>
+</head>
+<body>
+
+
+<header class="read-scroll">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-8 col-8 app-logo text-primary">
+        <a href="index.html" class="invisible-link">
+          <img src="dist/img/pasiencare_logo.png">
+        </a>
+      </div>
+      <div class="col-sm-4 col-4 d-lg-none d-md-none text-right pt-1">
+        <button type="button" id="sidebarCollapse">
+          <i class="fas fa-bars fa-2x text-white"></i>
+        </button>
+      </div>
+      <div class="col-lg-6 col-md-6 text-center d-none d-sm-none d-lg-block d-md-block align-self-center">
+        <ul class="list-inline header-menu">
+          <li class="list-inline-item"><a href="product.html">PRODUK</a></li>
+          <li class="list-inline-item active"><a href="#">XEDEKA PASIEN</a></li>
+          <li class="list-inline-item"><a href="article.html">ARTIKEL</a></li>
+          <li class="list-inline-item"><a href="contact.html">KONTAK</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3 text-lg-right text-md-right d-none d-sm-none d-lg-block d-md-block align-self-center">
+        <a href=""><button type="button" class="btn text-primary">MASUK</button></a>
+        <a href="register.html" target="_blank"><button type="button" class="btn btn-secondary">DAFTAR</button></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav id="sidebar">
+  <div class="sidebar-header">
+    <div id="login" class="row d-none">
+      <div class="col text-center text-white">
+        <div class="img-profile" style="background-image: url('dist/img/logo-alfacart.png')"><i class="icon-user d-none"></i></div>
+        <p class="no-margin fw4 text-lg">Bagus Arisandi</p>
+        <span class="fw3 text-md">bagus.arisandi@gmail.com</span>
+      </div>
+    </div>
+    <div id="unlogin" class="row">
+      <div class="col-12 app-logo text-xlg text-white">
+        <a href="index.html" class="invisible-link">
+          <img src="dist/img/pasiencare_logo.png">
+        </a>
+      </div>
+      <div class="col-12">
+        <div class="btn-group btn-block mt-15">
+          <button type="button" class="btn btn-outline-light"><a href="" class="invisible-link">MASUK</a></button>
+          <button type="button" class="btn btn-white text-primary"><a href="register.html" target="_blank" class="invisible-link">DAFTAR</a></button>
+        </div>
+      </div>
+    </div>
+    <div id="dismiss">
+      <i class="fas fa-times fa-2x"></i>
+    </div>
+  </div>
+
+  <ul class="list-unstyled components">
+    <li>
+      <a href="product.html" class="invisible-link">Produk</a>
+    </li>
+    <li class="active">
+      <a href="#" class="invisible-link">Xedeka Pasien</a>
+    </li>
+    <li>
+      <a href="article.html" class="invisible-link">Artikel</a>
+    </li>
+    <li>
+      <a href="contact.html" class="invisible-link">Kontak</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 no-padding">
+      <div class="panel-main-form not-home">
+        <h4 class="fw4 mb-20 d-sm-none d-none d-md-block d-lg-block">Konsultasikan keluhan Anda pada Homecare kami dengan mengisi kolom dibawah ini :</h4>
+        <h5 class="fw4 mb-20 d-sm-block d-block d-md-none d-lg-none">Konsultasikan keluhan Anda pada Homecare kami dengan mengisi kolom dibawah ini :</h5>
+        <div class="row">
+          <div class="col-lg-10 col-md-10 col-sm-12 col-12">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                <p class="text-sm mb-5 mt-10">Siapa yang perlu kami bantu</p>
+                <select class="form-control no-border no-radius">
+                  <option></option>
+                </select>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                <p class="text-sm mb-5 mt-10">Jenis Layanan</p>
+                <select class="form-control no-border no-radius">
+                  <option></option>
+                </select>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                <p class="text-sm mb-5 mt-10">Provinsi</p>
+                <select class="form-control no-border no-radius">
+                  <option></option>
+                </select>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                <p class="text-sm mb-5 mt-10">Kabupaten</p>
+                <select class="form-control no-border no-radius">
+                  <option></option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-12 col-12">
+            <p class="text-sm mb-5 mt-10">&nbsp;</p>
+            <a href="search-result.html" class="invisible-link"><button type="button" class="btn btn-tertiary btn-block">CARI</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-50">
+    <div class="col-12 col-sm-10 offset-sm-1 col-md-4 offset-md-4 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4">
+      <div class="input-group primary-flat">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="fas fa-search"></i></span>
+        </div>
+        <input type="text" class="form-control" placeholder="Cari judul, nama, atau isi campaign">
+      </div>
+    </div>
+  </div>
+  <div class="row mt-50">
+    <div class="col-12">
+      <h3 class="text-center mt-50 mb-25">Pasiencare Peduli Sosial</h3>
+      <p>Leukimia is a type of cancer that affects the blood and bone marrow. There are two types of leukimia, chronic and acute, which are treated differently and have different symptoms. Acute leukimia rapidly progresses and needs immediate, aggressive treatment. Chronic leukimia can take months or years to</p>
+    </div>
+    <div class="col-12 text-center">
+      <button type="button" class="btn btn-primary mt-50 mb-50">GALANG DANA SEKARANG</button>
+    </div>
+  </div>
+  <div class="row mt-50">
+    <div class="col-12 pl-sm-0 pr-sm-0 pl-0 pr-0 pl-md-3 pl-lg-3 pl-xl-3 pr-md-3 pr-lg-3 pr-xl-3">
+      <div class="single-slider">
+        <div class="slide-items">
+          <img src="images/rectangle_crowfunding.png" class="btn-block">
+          <p class="caption-items text-xlg elipsis lines2">Asthma allergy is the number one form of allergy today</p>
+        </div>
+        <div class="slide-items">
+          <img src="images/rectangle_crowfunding.png" class="btn-block">
+          <p class="caption-items text-xlg elipsis lines2">Asthma allergy is the number one form of allergy today</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-50">
+    <div class="col-12 text-center">
+      <h4>Siap memberi bantuan?</h4>
+      <p>Pilih campaign yang ingin Anda bantu</p>
+    </div>
+  </div>
+  <div class="row mt-30">
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+      <div class="card border-0 shadow rounded-0 mb-30">
+        <a href="crowfunding-detail.html" class="invisible-link"><img src="images/bg5.jpg" class="img-fluid"></a>
+        <div class="col-12 p-20">
+          <p class="text-lg fw5 elipsis lines2"><a href="crowfunding-detail.html" class="invisible-link">Membantu pasien yang terkena diabetes</a></p>
+          <div class="row">
+            <div class="col-7 text-sm pr-0">
+              <p class="mb-5">Terkumpul</p>
+              <span>Rp 125,000,000</span>
+            </div>
+            <div class="col-5 text-sm text-right">
+              <p class="mb-5">Sisa hari</p>
+              <span>40</span>
+            </div>
+          </div>
+          <div class="progress primary-progress mb-5 mt-20">
+            <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+      <div class="card border-0 shadow rounded-0 mb-30">
+        <a href="crowfunding-detail.html" class="invisible-link"><img src="images/bg5.jpg" class="img-fluid"></a>
+        <div class="col-12 p-20">
+          <p class="text-lg fw5 elipsis lines2"><a href="crowfunding-detail.html" class="invisible-link">Membantu pasien yang terkena leukimia</a></p>
+          <div class="row">
+            <div class="col-7 text-sm pr-0">
+              <p class="mb-5">Terkumpul</p>
+              <span>Rp 75,000,000</span>
+            </div>
+            <div class="col-5 text-sm text-right">
+              <p class="mb-5">Sisa hari</p>
+              <span>25</span>
+            </div>
+          </div>
+          <div class="progress primary-progress mb-5 mt-20">
+            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+      <div class="card border-0 shadow rounded-0 mb-30">
+        <a href="crowfunding-detail.html" class="invisible-link"><img src="images/bg5.jpg" class="img-fluid"></a>
+        <div class="col-12 p-20">
+          <p class="text-lg fw5 elipsis lines2"><a href="crowfunding-detail.html" class="invisible-link">Membantu pasien yang terkena kanker</a></p>
+          <div class="row">
+            <div class="col-7 text-sm pr-0">
+              <p class="mb-5">Terkumpul</p>
+              <span>Rp 500,000,000</span>
+            </div>
+            <div class="col-5 text-sm text-right">
+              <p class="mb-5">Sisa hari</p>
+              <span>5</span>
+            </div>
+          </div>
+          <div class="progress primary-progress mb-5 mt-20">
+            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+      <div class="card border-0 shadow rounded-0 mb-30">
+        <a href="crowfunding-detail.html" class="invisible-link"><img src="images/bg5.jpg" class="img-fluid"></a>
+        <div class="col-12 p-20">
+          <p class="text-lg fw5 elipsis lines2"><a href="crowfunding-detail.html" class="invisible-link">Membantu pasien yang terkena diabetes</a></p>
+          <div class="row">
+            <div class="col-7 text-sm pr-0">
+              <p class="mb-5">Terkumpul</p>
+              <span>Rp 125,000,000</span>
+            </div>
+            <div class="col-5 text-sm text-right">
+              <p class="mb-5">Sisa hari</p>
+              <span>40</span>
+            </div>
+          </div>
+          <div class="progress primary-progress mb-5 mt-20">
+            <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+      <div class="card border-0 shadow rounded-0 mb-30">
+        <a href="crowfunding-detail.html" class="invisible-link"><img src="images/bg5.jpg" class="img-fluid"></a>
+        <div class="col-12 p-20">
+          <p class="text-lg fw5 elipsis lines2"><a href="crowfunding-detail.html" class="invisible-link">Membantu pasien yang terkena leukimia</a></p>
+          <div class="row">
+            <div class="col-7 text-sm pr-0">
+              <p class="mb-5">Terkumpul</p>
+              <span>Rp 75,000,000</span>
+            </div>
+            <div class="col-5 text-sm text-right">
+              <p class="mb-5">Sisa hari</p>
+              <span>25</span>
+            </div>
+          </div>
+          <div class="progress primary-progress mb-5 mt-20">
+            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+      <div class="card border-0 shadow rounded-0 mb-30">
+        <a href="crowfunding-detail.html" class="invisible-link"><img src="images/bg5.jpg" class="img-fluid"></a>
+        <div class="col-12 p-20">
+          <p class="text-lg fw5 elipsis lines2"><a href="crowfunding-detail.html" class="invisible-link">Membantu pasien yang terkena kanker</a></p>
+          <div class="row">
+            <div class="col-7 text-sm pr-0">
+              <p class="mb-5">Terkumpul</p>
+              <span>Rp 500,000,000</span>
+            </div>
+            <div class="col-5 text-sm text-right">
+              <p class="mb-5">Sisa hari</p>
+              <span>5</span>
+            </div>
+          </div>
+          <div class="progress primary-progress mb-5 mt-20">
+            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-50 mb-50">
+    <div class="col-12 text-center">
+      <a href="#" class="invisible-link text-primary">LIHAT SEMUA</a>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+        <p class="no-margin app-logo"><img src="dist/img/pasiencare_logo.png"></p>
+        <ul class="list-inline header-menu fw5 mt-20">
+          <li class="list-inline-item"><a href="" class="invisible-link">PRODUK</a></li>
+          <li class="list-inline-item"><a href="" class="invisible-link">PENDAFTARAN</a></li>
+          <li class="list-inline-item"><a href="" class="invisible-link">ARTIKEL</a></li>
+          <li class="list-inline-item"><a href="" class="invisible-link">XEDEKA PASIEN</a></li>
+          <li class="list-inline-item"><a href="" class="invisible-link">KONTAK</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-lg-right text-md-right text-sm-center text-center">
+        <ul class="list-inline linked-soc mt-30">
+          <li class="list-inline-item">
+            <a href="" class="invisible-link">
+              <div class="soc-container fb">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="" class="invisible-link">
+              <div class="soc-container ig">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="" class="invisible-link">
+              <div class="soc-container youtube">
+                <i class="fab fa-youtube"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="dist/js/jquery.min.js"></script>
+<script src="dist/js/bootstrap.bundle.min.js"></script>
+<!-- Plugin -->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="dist/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Custom JS -->
+<script type="text/javascript" src="dist/js/pasiencare.js"></script>
+</body>
+</html>

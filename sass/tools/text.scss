@@ -1,10 +1,14 @@
 /*URL and Text*/
 a{
   color: #005CA8;
-  &.invisible-link{color: inherit;}
+  &.invisible-link{
+    color: inherit;
+    text-decoration: none;
+  }
 }
-.text-primary{color: $primary-red!important;}
-.text-secondary{color: $primary-orange!important;}
+.text-primary{color: $color-primary!important;}
+.text-secondary{color: $color-secondary!important;}
+.text-tertiary{color: $color-tertiary!important;}
 
 /*Font Size*/
 .text-larger{font-size: 22px}

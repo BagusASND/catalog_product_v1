@@ -1,0 +1,16 @@
+.primary-tabs{
+  border-bottom: none;
+  li{
+    a{
+      color: rgba(0, 0, 0, 0.31);
+      font-weight: 500;
+      border: none!important;
+      &.active{
+        border: none;
+        background: transparent!important;
+        color: $color-primary!important;
+      }
+      &:hover{border: none;}
+    }
+  }
+}

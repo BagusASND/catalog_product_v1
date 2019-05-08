@@ -1,8 +1,31 @@
 /*Button*/
 .btn-primary{
-  background-color: $primary-red;
-  border: $primary-red;
-  &:focus{box-shadow: none;}
+  background-color: $color-primary;
+  border-color: $color-primary;
+  color: #ffffff;
+  &:hover{
+    background-color: $color-primary;
+    border-color: $color-primary;
+  }
+}
+.btn-outline-primary{
+  color: $color-primary;
+  border-color: $color-primary;
+}
+.btn-secondary{
+  background-color: $color-secondary;
+  border-color: $color-secondary;
+  color: #ffffff!important;
+}
+.btn-tertiary{
+  background-color: $primary-black;
+  border-color: $primary-black;
+  color: #ffffff;
+}
+.btn-primary-alt{
+  background-color: $primary-orange;
+  border-color: $primary-orange;
+  color: #ffffff;
 }
 .btn-white{background-color: #ffffff}
 .btn-outline-muted{
@@ -10,9 +33,13 @@
   background-color: #F6F6F6;
 }
 
+.btn{
+  &:focus{box-shadow: none;}
+}
+
 .btn-download-app{
   background-color: #000000;
-  padding: 5px 10px;
+  padding: 1px 10px;
   border-radius: 6px;
 
   div{
@@ -24,9 +51,11 @@
   }
 
   &.ios{
+    border: solid 1px #989898;
     div{background-image: url("#{$img-component-path}/appstore.png");}
   }
   &.android{
+    border: solid 1px #000000;
     div{background-image: url("#{$img-component-path}/playstore.png");}
   }
 }
@@ -56,5 +85,15 @@
     font-size: 12px;
     border-left: solid 1px #dddddd;
     &:first-child{border: none}
+  }
+}
+
+.floating-share-btn{
+  position: fixed;
+  top: 300px;
+  left: 25px;
+  z-index: 12;
+  ul{
+    li{list-style: none;}
   }
 }

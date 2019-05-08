@@ -1,0 +1,12 @@
+.panel-main-form{
+  background: linear-gradient(106deg, #ffdd4f, #fdb927);
+  padding: 40px 30px 50px;
+  border-radius: 4px;
+  &.min-margin{margin-top: -147px;}
+  &.not-home{
+    margin-top: 150px;
+  }
+  &.long-head{
+    margin-top: 169px;
+  }
+}

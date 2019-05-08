@@ -6,7 +6,7 @@ var destPath = __dirname + '/public/styles';
 
 var serveStatic = require('serve-static')
 var http = require('http');
-var port = process.env.PORT || 2345;
+var port = process.env.PORT || 5656;
 var app = connect();
 app.use('/styles', sassMiddleware({
   src: srcPath,

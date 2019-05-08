@@ -2,12 +2,9 @@
 .checkbox-control {
   display: block;
   position: relative;
-  padding-left: 22px;
+  padding-left: 30px;
   margin-bottom: 5px;
   cursor: pointer;
-  font-size: 12px;
-  font-weight: 300;
-  color: #A2A2A2;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -23,7 +20,7 @@
 
     /* When the checkbox is checked, add a blue background */
     &:checked ~ .checkmark {
-      background-color: #60AEEE;
+      background-color: $color-primary;
 
       /* Show the checkmark when checked */
       &:after {
@@ -34,7 +31,7 @@
 
   /* On mouse-over, add a grey background color */
   &:hover input ~ .checkmark {
-    background-color: #60AEEE;
+    background-color: $color-primary;
   }
 
   /* Style the checkmark/indicator */
@@ -46,7 +43,7 @@
     height: 15px;
     width: 15px;
     border-radius: 4px;
-    background-color: #60AEEE;
+    background-color: $color-primary;
 
     &:after{
       /* Create the checkmark/indicator (hidden when not checked) */
